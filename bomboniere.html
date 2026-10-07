@@ -17,6 +17,11 @@ a{color:#191816}a:hover{color:#B3261E}
 .ph{background:repeating-linear-gradient(0deg,#D8D0C3 0 2px,#E5DFD5 2px 7px);display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#454039;text-transform:uppercase;letter-spacing:.06em;text-align:center;padding:16px;box-sizing:border-box}
 .pcard .alt{opacity:0;transition:opacity .35s}.pcard:hover .alt{opacity:1}
 .pimg{position:relative;aspect-ratio:2/3;overflow:hidden;background:#E5DFD5}.pimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.opt{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border:1px solid #A39B8E;background:#FFFFFF;cursor:pointer}
+.opt input{margin-top:3px;width:18px;height:18px;accent-color:#B3261E;flex:none}
+.opt:has(input:checked){border-color:#191816;box-shadow:inset 0 0 0 1px #191816}
+.riga{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid #3A3733}
+.riga span:last-child{font-family:'IBM Plex Mono',monospace;white-space:nowrap}
 </style>
 </head>
 <body>
@@ -41,7 +46,7 @@ a{color:#191816}a:hover{color:#B3261E}
 <p style="margin: 0; font-size: 20px; line-height: 1.55; max-width: 580px; color: #2E2B27">Vasetti stampati in 3D che durante l'evento decorano i tavoli e, a fine giornata, diventano il regalo per i vostri invitati. Estetica, funzione ed esperienza in un unico oggetto, completamente personalizzato.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
 <a href="contatti.html" style="text-decoration: none; padding: 16px 26px; background: #B3261E; color: #FFFFFF; font-weight: 600; font-size: 16px">Richiedi un preventivo gratuito</a>
-<a href="#linee" style="text-decoration: none; padding: 15px 25px; border: 1px solid #191816; font-weight: 600; font-size: 16px">Guarda le linee realizzate</a>
+<a href="#preventivo" style="text-decoration: none; padding: 15px 25px; border: 1px solid #191816; font-weight: 600; font-size: 16px">Calcola il preventivo</a>
 </div>
 </div>
 <img src="img/eventi/radial-tavolo-1.webp" alt="Vasetti Radial con fiori sulla tavola di un matrimonio" loading="lazy" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; object-position: center 40%">
@@ -89,44 +94,73 @@ a{color:#191816}a:hover{color:#B3261E}
 </div>
 </section>
 <section id="linee" style="background: #191816; color: #EEEAE3">
-<div style="max-width: 1360px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 56px">
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px 56px; align-items: end">
-<div style="display: flex; flex-direction: column; gap: 18px"><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #BDB6AA">Linee già realizzate</div><h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 70%; font-weight: 800; text-transform: uppercase; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.9">Pensate per ogni coppia</h2></div>
-<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #D9D3C9">Alcune linee di vasetti realizzate per altri matrimoni. Ognuna nasce da un modello 3D che adattiamo a forme, colori e dettagli della vostra giornata.</p>
+<div style="max-width: 1360px; margin: 0 auto; padding: 104px 24px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px 56px; align-items: end; margin-bottom: 48px">
+<div style="display: flex; flex-direction: column; gap: 18px"><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #BDB6AA">Le linee</div><h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 70%; font-weight: 800; text-transform: uppercase; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.9">Scegliete il vostro vaso</h2></div>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #D9D3C9">Quattro linee, ognuna in più misure: potete scegliere un solo modello o mescolare le altezze sui tavoli. Colori e personalizzazione li decidiamo insieme.</p>
 </div>
-<article style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 32px 56px; align-items: start; border-top: 1px solid #3A3733; padding-top: 40px">
-<div style="display: flex; flex-direction: column; gap: 18px">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #BDB6AA">01</span>
-<h3 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 70%; font-weight: 800; text-transform: uppercase; font-size: clamp(44px, 5vw, 72px); line-height: 0.9">Radial</h3>
-<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #D9D3C9; max-width: 520px">Pareti a lamelle sottili che girano attorno al vaso come un ventaglio, in sagome diverse da mescolare sul tavolo.</p>
-<img src="img/eventi/radial-render.webp" alt="Modello 3D della linea Radial" loading="lazy" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; max-width: 460px; border-radius: 2px">
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr)); gap: 12px"><img src="img/eventi/radial-tavolo-3.webp" alt="Tavolo rotondo apparecchiato con vasetti Radial" loading="lazy" style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block"></div>
-</article>
-<article style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 32px 56px; align-items: start; border-top: 1px solid #3A3733; padding-top: 40px">
-<div style="display: flex; flex-direction: column; gap: 18px">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #BDB6AA">02</span>
-<h3 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 70%; font-weight: 800; text-transform: uppercase; font-size: clamp(44px, 5vw, 72px); line-height: 0.9">Sweep</h3>
-<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #D9D3C9; max-width: 520px">Una sezione rigata che si piega e si avvolge su sé stessa: perfetta per un singolo stelo o un piccolo mazzo.</p>
-<img src="img/eventi/sweep-render.webp" alt="Modello 3D della linea Sweep" loading="lazy" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; max-width: 460px; border-radius: 2px">
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr)); gap: 12px"><img src="img/eventi/sweep-tavolo-2.webp" alt="Vaso Sweep con fiori di campo" loading="lazy" style="width: 100%; aspect-ratio: 2 / 3; object-fit: cover; display: block"><img src="img/eventi/sweep-tavolo-3.webp" alt="Vaso Sweep giallo con margherite" loading="lazy" style="width: 100%; aspect-ratio: 2 / 3; object-fit: cover; display: block"><img src="img/eventi/sweep-tavolo-4.webp" alt="Vaso Sweep con dalia" loading="lazy" style="width: 100%; aspect-ratio: 2 / 3; object-fit: cover; display: block"></div>
-</article>
-<article style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 32px 56px; align-items: start; border-top: 1px solid #3A3733; padding-top: 40px">
-<div style="display: flex; flex-direction: column; gap: 18px">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #BDB6AA">03</span>
-<h3 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 70%; font-weight: 800; text-transform: uppercase; font-size: clamp(44px, 5vw, 72px); line-height: 0.9">Olympia</h3>
-<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #D9D3C9; max-width: 520px">Le forme dei vasi dell'antica Grecia, ridotte all'essenziale. Qui nelle varianti salvia e terracotta.</p>
-<img src="img/eventi/olympia-render-verde.webp" alt="Modello 3D della linea Olympia" loading="lazy" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; max-width: 460px; border-radius: 2px">
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr)); gap: 12px"><img src="img/eventi/olympia-render-rosa.webp" alt="Modello 3D della linea Olympia in terracotta" loading="lazy" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block"></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 40px 24px">
+<article class="pcard" style="display: flex; flex-direction: column; gap: 14px">
+<div class="pimg"><img src="img/origami-1.webp" alt="Vasi della linea Origami" loading="lazy"><img class="alt" src="img/origami-2.webp" alt="" loading="lazy" aria-hidden="true"></div>
+<h3 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 700; font-size: 30px; text-transform: uppercase; line-height: 1">Origami</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #D9D3C9">Ispirata all'arte giapponese della carta piegata: pareti sfaccettate che sembrano fogli piegati a mano, dove ogni piega cattura la luce e disegna un gioco di ombre.</p>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.04em; color: #A29B90">5 misure · altezza 8,2–23,6 cm</span>
+</article><article class="pcard" style="display: flex; flex-direction: column; gap: 14px">
+<div class="pimg"><img src="img/sweep-1.webp" alt="Vasi della linea Sweep" loading="lazy"><img class="alt" src="img/sweep-2.webp" alt="" loading="lazy" aria-hidden="true"></div>
+<h3 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 700; font-size: 30px; text-transform: uppercase; line-height: 1">Sweep</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #D9D3C9">Prende il nome dal comando di modellazione 3D che fa scorrere un profilo lungo un percorso, generando la forma come una traccia continua. Così nasce questa linea: un'unica sezione che si piega e si avvolge su sé stessa.</p>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.04em; color: #A29B90">4 misure · altezza 14,5–19 cm</span>
+</article><article class="pcard" style="display: flex; flex-direction: column; gap: 14px">
+<div class="pimg"><img src="img/quadrifoglio-1.webp" alt="Vasi della linea Quadrifoglio" loading="lazy"><img class="alt" src="img/quadrifoglio-2.webp" alt="" loading="lazy" aria-hidden="true"></div>
+<h3 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 700; font-size: 30px; text-transform: uppercase; line-height: 1">Quadrifoglio</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #D9D3C9">Una sezione a quattro lobi che si assottiglia verso l'alto e si apre in una piccola corolla. Un portafortuna da tenere in casa, in quattro misure.</p>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.04em; color: #A29B90">4 misure · altezza 7,5–18,5 cm</span>
+</article><article class="pcard" style="display: flex; flex-direction: column; gap: 14px">
+<div class="pimg"><img src="img/olympia-1.webp" alt="Vasi della linea Olympia" loading="lazy"><img class="alt" src="img/olympia-2.webp" alt="" loading="lazy" aria-hidden="true"></div>
+<h3 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 700; font-size: 30px; text-transform: uppercase; line-height: 1">Olympia</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #D9D3C9">Una rilettura contemporanea dei vasi dell'antica Grecia, ridotti alle forme essenziali. Una tecnica di stampa dedicata dona alla superficie una texture materica che ricorda la ceramica.</p>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.04em; color: #A29B90">5 misure · altezza 8,5–18 cm</span>
 </article>
 </div>
+</div>
+</section>
+<section id="preventivo" style="max-width: 1360px; margin: 0 auto; padding: 104px 24px 40px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px 56px; align-items: end; margin-bottom: 40px">
+<div style="display: flex; flex-direction: column; gap: 18px"><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5C574F">Preventivo in un minuto</div><h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 70%; font-weight: 800; text-transform: uppercase; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.9">Calcola il tuo preventivo</h2></div>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #4A463F">Inserite qualche dato e ottenete subito una stima. Poi, con un clic, ci mandate la richiesta: il preventivo definitivo è gratuito e senza impegno.</p>
+</div>
+<form id="calc" style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start" onsubmit="return false">
+<div style="flex: 999 1 560px; min-width: 0; background: #F7F5F1; border: 1px solid #CFC7BA; padding: 32px; display: flex; flex-direction: column; gap: 26px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px">
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Linea<select id="c-linea" style="padding: 14px; border: 1px solid #A39B8E; background: #FFFFFF; font: inherit; font-size: 16px; color: #191816"><option value="origami">Origami</option><option value="sweep">Sweep</option><option value="quadrifoglio">Quadrifoglio</option><option value="olympia">Olympia</option></select></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Misura<select id="c-misura" style="padding: 14px; border: 1px solid #A39B8E; background: #FFFFFF; font: inherit; font-size: 16px; color: #191816"></select></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Numero di pezzi<input id="c-qta" type="number" min="1" step="1" value="80" inputmode="numeric" style="padding: 14px; border: 1px solid #A39B8E; background: #FFFFFF; font: inherit; font-size: 16px; color: #191816"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Data dell'evento (facoltativa)<input id="c-data" type="date" style="padding: 14px; border: 1px solid #A39B8E; background: #FFFFFF; font: inherit; font-size: 16px; color: #191816"></label>
+</div>
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 10px">
+<legend style="font-weight: 600; font-size: 15px; margin-bottom: 10px; padding: 0">Personalizzazione</legend>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px">
+<label class="opt"><input type="radio" name="pers" value="nessuna" checked><span><strong style="display: block; font-size: 15px">Nessuna</strong><span style="font-size: 13px; color: #5C574F">Solo forma e colore</span></span></label>
+<label class="opt"><input type="radio" name="pers" value="iniziali"><span><strong style="display: block; font-size: 15px">Iniziali e data</strong><span style="font-size: 13px; color: #5C574F">Testo inciso sul vasetto</span></span></label>
+<label class="opt"><input type="radio" name="pers" value="grafica"><span><strong style="display: block; font-size: 15px">Grafica dedicata</strong><span style="font-size: 13px; color: #5C574F">Simbolo o disegno su misura</span></span></label>
+</div>
+</fieldset>
+<label class="opt" style="align-self: flex-start"><input type="checkbox" id="c-nfc"><span><strong style="display: block; font-size: 15px">Tag NFC integrato</strong><span style="font-size: 13px; color: #5C574F">Apre il sito del matrimonio o il book fotografico avvicinando il telefono</span></span></label>
+</div>
+<aside aria-live="polite" style="flex: 1 1 320px; min-width: 0; background: #191816; color: #EEEAE3; padding: 32px; display: flex; flex-direction: column; gap: 18px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90">La vostra stima</span>
+<div><span id="r-tot" style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 64px; line-height: 1">€ 0</span></div>
+<div id="r-righe" style="display: flex; flex-direction: column; font-size: 15px"></div>
+<p id="r-avviso" style="margin: 0; font-size: 14px; line-height: 1.5; color: #F2C3B9" hidden></p>
+<p style="margin: 0; font-size: 13px; line-height: 1.5; color: #A29B90">Stima indicativa. Il prezzo finale dipende da colori, dettagli della personalizzazione e tempi di consegna.</p>
+<a id="r-invia" href="contatti.html" style="text-decoration: none; text-align: center; padding: 16px 22px; background: #B3261E; color: #FFFFFF; font-weight: 600; font-size: 16px">Richiedi il preventivo con questi dati</a>
+</aside>
+</form>
 </section>
 <section style="max-width: 1360px; margin: 0 auto; padding: 104px 24px">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px 56px; align-items: end; margin-bottom: 40px">
 <h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 70%; font-weight: 800; text-transform: uppercase; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.9">Come funziona</h2>
-<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #4A463F">Vi consigliamo di contattarci almeno [X settimane] prima dell'evento, per avere il tempo di progettare, provare e produrre con calma.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #4A463F">Vi consigliamo di contattarci almeno 6 settimane prima dell'evento, per avere il tempo di progettare, provare e produrre con calma.</p>
 </div>
 <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0 24px">
 <li style="padding: 24px 20px 24px 0; display: flex; flex-direction: column; gap: 10px; border-top: 2px solid #191816">
@@ -165,5 +199,67 @@ a{color:#191816}a:hover{color:#B3261E}
 </div>
 </footer>
 </div>
+<script>
+/* ===== LISTINO BOMBONIERE — modificare qui i prezzi =====
+   Tutti i valori sono in euro. */
+var LISTINO = {
+  vasi: {"origami": [{"h": 8.2, "p": 10}, {"h": 8.2, "p": 10}, {"h": 16.2, "p": 10}, {"h": 16.2, "p": 10}, {"h": 23.6, "p": 10}], "sweep": [{"h": 14.5, "p": 10}, {"h": 17, "p": 10}, {"h": 16.5, "p": 10}, {"h": 19, "p": 10}], "quadrifoglio": [{"h": 7.5, "p": 10}, {"h": 11.5, "p": 10}, {"h": 15.5, "p": 10}, {"h": 18.5, "p": 10}], "olympia": [{"h": 8.5, "p": 10}, {"h": 12, "p": 10}, {"h": 15, "p": 10}, {"h": 15, "p": 10}, {"h": 18, "p": 10}]},
+  personalizzazione: {            // costo aggiuntivo per pezzo + costo fisso una tantum
+    nessuna:  { pezzo: 0, fisso: 0 },
+    iniziali: { pezzo: 2, fisso: 0 },
+    grafica:  { pezzo: 3, fisso: 50 }
+  },
+  nfc: 3,                          // costo aggiuntivo per pezzo
+  sconti: [                        // sconto per quantità (dal numero di pezzi indicato in su)
+    { da: 150, sconto: 0.15 },
+    { da: 100, sconto: 0.10 },
+    { da: 60,  sconto: 0.05 }
+  ],
+  minimoPezzi: 20,
+  settimaneMinime: 6               // anticipo consigliato rispetto alla data dell'evento
+};
+/* ======================================================== */
+(function(){
+  var nomi = {origami:'Origami', sweep:'Sweep', quadrifoglio:'Quadrifoglio', olympia:'Olympia'};
+  var persNomi = {nessuna:'Nessuna', iniziali:'Iniziali e data', grafica:'Grafica dedicata'};
+  var $ = function(id){ return document.getElementById(id); };
+  var eur = function(n){ return '€ ' + n.toLocaleString('it-IT', {minimumFractionDigits: n % 1 ? 2 : 0, maximumFractionDigits: 2}); };
+  var cm = function(h){ return String(h).replace('.', ','); };
+  function misure(){
+    var l = $('c-linea').value, sel = $('c-misura'), v = LISTINO.vasi[l];
+    sel.innerHTML = '';
+    var o = document.createElement('option'); o.value = 'mix'; o.textContent = 'Mix di tutte le misure'; sel.appendChild(o);
+    v.forEach(function(x, i){ var o = document.createElement('option'); o.value = i; o.textContent = 'Modello ' + (i + 1) + ' · altezza ' + cm(x.h) + ' cm'; sel.appendChild(o); });
+  }
+  function calcola(){
+    var l = $('c-linea').value, m = $('c-misura').value, v = LISTINO.vasi[l];
+    var q = Math.max(0, Math.floor(+$('c-qta').value || 0));
+    var pers = (document.querySelector('input[name="pers"]:checked') || {}).value || 'nessuna';
+    var nfc = $('c-nfc').checked;
+    var base = m === 'mix' ? v.reduce(function(s, x){ return s + x.p; }, 0) / v.length : v[+m].p;
+    var P = LISTINO.personalizzazione[pers];
+    var unit = base + P.pezzo + (nfc ? LISTINO.nfc : 0);
+    var sc = 0; LISTINO.sconti.forEach(function(s){ if (q >= s.da && s.sconto > sc) sc = s.sconto; });
+    var lordo = unit * q, sconto = lordo * sc, tot = lordo - sconto + (q ? P.fisso : 0);
+    var r = [['Prezzo per pezzo', eur(unit)], ['Pezzi', String(q)]];
+    if (sconto) r.push(['Sconto quantità (' + Math.round(sc * 100) + '%)', '− ' + eur(sconto)]);
+    if (P.fisso && q) r.push(['Progettazione grafica', eur(P.fisso)]);
+    $('r-righe').innerHTML = r.map(function(x){ return '<div class="riga"><span>' + x[0] + '</span><span>' + x[1] + '</span></div>'; }).join('');
+    $('r-tot').textContent = eur(Math.round(tot * 100) / 100);
+    var avv = [];
+    if (q && q < LISTINO.minimoPezzi) avv.push('L\'ordine minimo è di ' + LISTINO.minimoPezzi + ' pezzi.');
+    var d = $('c-data').value;
+    if (d) { var gg = (new Date(d) - new Date()) / 864e5; if (gg < LISTINO.settimaneMinime * 7) avv.push('Mancano meno di ' + LISTINO.settimaneMinime + ' settimane all\'evento: scriveteci subito per verificare i tempi.'); }
+    $('r-avviso').textContent = avv.join(' '); $('r-avviso').hidden = !avv.length;
+    var mis = m === 'mix' ? 'mix di misure' : 'modello ' + (+m + 1) + ' (' + cm(v[+m].h) + ' cm)';
+    var msg = 'Bomboniere: linea ' + nomi[l] + ', ' + mis + ', ' + q + ' pezzi. Personalizzazione: ' + persNomi[pers] + '. Tag NFC: ' + (nfc ? 'sì' : 'no') + '.' + (d ? ' Data evento: ' + d.split('-').reverse().join('/') + '.' : '') + ' Stima dal sito: ' + eur(Math.round(tot * 100) / 100) + '.';
+    $('r-invia').href = 'contatti.html?tipo=' + encodeURIComponent('Bomboniere per un evento') + '&messaggio=' + encodeURIComponent(msg) + (d ? '&scadenza=' + d : '');
+  }
+  $('c-linea').addEventListener('change', function(){ misure(); calcola(); });
+  $('calc').addEventListener('input', calcola);
+  $('calc').addEventListener('change', calcola);
+  misure(); calcola();
+})();
+</script>
 </body>
 </html>

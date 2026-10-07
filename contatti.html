@@ -112,5 +112,15 @@ input,select,textarea{font:inherit;color:#191816}
 </footer>
 
 </div>
+<script>
+(function(){
+  var q = new URLSearchParams(location.search);
+  var tipo = q.get('tipo'), msg = q.get('messaggio'), data = q.get('scadenza');
+  if (tipo) document.querySelectorAll('input[name="tipo"]').forEach(function(r){ r.checked = (r.value === tipo); });
+  if (msg) { var m = document.querySelector('textarea[name="messaggio"]'); if (m) m.value = msg + '\n\n'; }
+  if (data) { var d = document.querySelector('input[name="scadenza"]'); if (d) d.value = data; }
+  if (msg) { var f = document.querySelector('input[name="nome"]'); if (f) f.focus(); }
+})();
+</script>
 </body>
 </html>
