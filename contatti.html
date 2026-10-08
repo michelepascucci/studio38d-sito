@@ -9,8 +9,11 @@
 <meta property="og:description" content="Contatta STUDIO38D per un preventivo: progetti su misura, regali aziendali, mappe in rilievo e rivenditori. Via Alberto Ascari 38D, Roma.">
 <meta property="og:type" content="website">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/inter-tight-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Inter Tight';font-style:normal;font-display:swap;font-weight:100 900;src:url(fonts/inter-tight-latin-ext-wght-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Inter Tight';font-style:normal;font-display:swap;font-weight:100 900;src:url(fonts/inter-tight-latin-wght-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
 <style>
 body{margin:0;background:#F5F2ED}
 a{color:#1A1A1A}a:hover{color:#D97757}
@@ -88,7 +91,7 @@ if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 
 <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Allegati: foto, schizzi, file 3D o logo (facoltativo)<input type="file" name="allegati" multiple style="padding: 14px; border: 1px dashed #C7BCAB; background: #FFFFFF; font-size: 15px"></label>
 
-<label style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px; line-height: 1.5; color: #3D4451"><input type="checkbox" name="privacy" required style="margin-top: 3px; width: 18px; height: 18px"> Ho letto l'informativa privacy e acconsento al trattamento dei dati per ricevere una risposta.</label>
+<label style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px; line-height: 1.5; color: #3D4451"><input type="checkbox" name="privacy" required style="margin-top: 3px; width: 18px; height: 18px"> Ho letto l'<a href="privacy.html" target="_blank" style="color: #1A1A1A; font-weight: 600">informativa privacy</a> e acconsento al trattamento dei dati per ricevere una risposta.</label>
 
 <button class="btn" type="submit" style="align-self: flex-start; padding: 18px 32px; background: #D97757; color: #1A1A1A; border: 0; font: inherit; font-weight: 600; font-size: 17px; cursor: pointer">Invia la richiesta</button>
 </form>
@@ -129,7 +132,7 @@ if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 <footer style="background: #1A1A1A; color: #D9D3C9">
 <div style="max-width: 1360px; margin: 0 auto; padding: 40px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 32px; font-size: 14px; font-family: 'Inter Tight', sans-serif; font-weight: 600">
 <span style="color: #F5F2ED; display: inline-flex; align-items: center; gap: 12px"><img src="img/logo-chiaro.svg" alt="STUDIO38D" width="32" height="32" style="width: 32px; height: 32px; display: block; border-radius: 0">Built, not rendered.</span>
-<span>STUDIO38D S.r.l. · Via Alberto Ascari 38D, 00142 Roma · C.F. e P.IVA 18445081005 · PEC studio38d@ultracert.it</span>
+<span>STUDIO38D S.r.l. · Via Alberto Ascari 38D, 00142 Roma · C.F. e P.IVA 18445081005 · PEC studio38d@ultracert.it · <a href="privacy.html" style="color: #A29B90">Privacy</a></span>
 </div>
 </footer>
 
