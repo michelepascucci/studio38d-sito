@@ -38,6 +38,7 @@ a{color:#1A1A1A}a:hover{color:#D97757}
 .xp .b2{left:76%;top:45%}
 .xp .b3{left:76%;top:77%}
 @container (max-width:620px){.xp{aspect-ratio:auto;display:flex;flex-direction:column;gap:12px}.xp-img{position:relative;width:100%}.xp-ar,.xp-dot,.xp-end{display:none}.xp-box{position:static;width:auto!important}.xp-d{font-size:14px}.xp-t{font-size:17px}}
+.chipopt{position:relative;cursor:pointer}.chipopt input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}.chipopt span{display:inline-flex;align-items:center;justify-content:center;min-width:48px;height:44px;padding:0 16px;box-sizing:border-box;border:1px solid #C7BCAB;border-radius:999px;background:#FFFFFF;font-size:15px;font-weight:600}.chipopt input:checked+span{background:#1A1A1A;color:#F5F2ED;border-color:#1A1A1A}.chipopt input:focus-visible+span{outline:2px solid #D97757;outline-offset:2px}
 /* === Tema Argilla === */
 body{font-family:'Inter Tight',sans-serif}
 img,.ph,.pimg{border-radius:20px}
@@ -187,36 +188,47 @@ if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 </section>
 <section id="preventivo" style="max-width: 1360px; margin: 0 auto; padding: 104px 24px 40px">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px 56px; align-items: end; margin-bottom: 40px">
-<div style="display: flex; flex-direction: column; gap: 18px"><div style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5B6270">Preventivo in un minuto</div><h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.9">Calcola il tuo preventivo</h2></div>
-<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3D4451">Inserite qualche dato e ottenete subito una stima. Poi, con un clic, ci mandate la richiesta: il preventivo definitivo è gratuito e senza impegno.</p>
+<div style="display: flex; flex-direction: column; gap: 18px"><div style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5B6270">Preventivo in un minuto</div><h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.95">Calcola il tuo preventivo</h2></div>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3D4451">Scegliete linea, misure, colori e quantità: la stima si aggiorna mentre compilate. Poi, con un clic, ci mandate la richiesta. Il preventivo definitivo è gratuito e senza impegno.</p>
 </div>
 <form id="calc" style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start" onsubmit="return false">
-<div style="flex: 999 1 560px; min-width: 0; background: #EDE7DF; border: 1px solid #DCD3C4; padding: 32px; display: flex; flex-direction: column; gap: 26px">
+<div class="panel" style="flex: 999 1 560px; min-width: 0; background: #EDE7DF; border: 1px solid #DCD3C4; padding: 32px; display: flex; flex-direction: column; gap: 26px">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px">
 <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Linea di vasi<select id="c-linea" style="padding: 14px; border: 1px solid #C7BCAB; background: #FFFFFF; font: inherit; font-size: 16px; color: #1A1A1A"><option value="origami">Origami</option><option value="sweep">Sweep</option><option value="quadrifoglio">Quadrifoglio</option><option value="olympia">Olympia</option></select></label>
 <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Misura<select id="c-misura" style="padding: 14px; border: 1px solid #C7BCAB; background: #FFFFFF; font: inherit; font-size: 16px; color: #1A1A1A"></select></label>
-<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Numero di pezzi<input id="c-qta" type="number" min="1" step="1" value="80" inputmode="numeric" style="padding: 14px; border: 1px solid #C7BCAB; background: #FFFFFF; font: inherit; font-size: 16px; color: #1A1A1A"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Numero di bomboniere<input id="c-qta" type="number" min="1" step="1" value="80" inputmode="numeric" style="padding: 14px; border: 1px solid #C7BCAB; background: #FFFFFF; font: inherit; font-size: 16px; color: #1A1A1A"></label>
 <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Data dell'evento (facoltativa)<input id="c-data" type="date" style="padding: 14px; border: 1px solid #C7BCAB; background: #FFFFFF; font: inherit; font-size: 16px; color: #1A1A1A"></label>
 </div>
 <fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 10px">
-<legend style="font-weight: 600; font-size: 15px; margin-bottom: 10px; padding: 0">Personalizzazione</legend>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px">
-<label class="opt"><input type="radio" name="pers" value="nessuna" checked><span><strong style="display: block; font-size: 15px">Nessuna</strong><span style="font-size: 13px; color: #5B6270">Solo forma e colore</span></span></label>
-<label class="opt"><input type="radio" name="pers" value="iniziali"><span><strong style="display: block; font-size: 15px">Iniziali e data</strong><span style="font-size: 13px; color: #5B6270">Testo inciso sul vasetto</span></span></label>
-<label class="opt"><input type="radio" name="pers" value="grafica"><span><strong style="display: block; font-size: 15px">Grafica dedicata</strong><span style="font-size: 13px; color: #5B6270">Simbolo o disegno su misura</span></span></label>
+<legend style="font-weight: 600; font-size: 15px; margin-bottom: 4px; padding: 0">Numero di colori</legend>
+<span style="font-size: 13px; color: #5B6270; margin-bottom: 6px">Quanti colori diversi volete usare in tutta la fornitura.</span>
+<div style="display: flex; flex-wrap: wrap; gap: 8px"><label class="chipopt"><input type="radio" name="colori" value="1" checked><span>1</span></label><label class="chipopt"><input type="radio" name="colori" value="2"><span>2</span></label><label class="chipopt"><input type="radio" name="colori" value="3"><span>3</span></label><label class="chipopt"><input type="radio" name="colori" value="4"><span>4</span></label><label class="chipopt"><input type="radio" name="colori" value="5"><span>5</span></label><label class="chipopt"><input type="radio" name="colori" value="6"><span>Più di 5</span></label></div>
+</fieldset>
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 10px">
+<legend style="font-weight: 600; font-size: 15px; margin-bottom: 10px; padding: 0">Extra per ogni bomboniera</legend>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px">
+<label class="opt"><input type="checkbox" id="c-iniziali"><span><strong style="display: block; font-size: 15px">Iniziali e data</strong><span style="font-size: 13px; color: #5B6270">Personalizzazione incisa sul vasetto</span></span></label>
+<label class="opt"><input type="checkbox" id="c-nfc"><span><strong style="display: block; font-size: 15px">Tag NFC integrato</strong><span style="font-size: 13px; color: #5B6270">Apre il sito dell'evento o l'album fotografico</span></span></label>
 </div>
 </fieldset>
-<label class="opt" style="align-self: flex-start"><input type="checkbox" id="c-nfc"><span><strong style="display: block; font-size: 15px">Tag NFC integrato</strong><span style="font-size: 13px; color: #5B6270">Apre il sito dell'evento o l'album fotografico avvicinando il telefono</span></span></label>
 </div>
-<aside aria-live="polite" style="flex: 1 1 320px; min-width: 0; background: #1A1A1A; color: #F5F2ED; padding: 32px; display: flex; flex-direction: column; gap: 18px">
+<aside aria-live="polite" class="panel" style="flex: 1 1 320px; min-width: 0; background: #1A1A1A; color: #F5F2ED; padding: 32px; display: flex; flex-direction: column; gap: 18px">
 <span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90">La vostra stima</span>
-<div><span id="r-tot" style="font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: 64px; line-height: 1">€ 0</span></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><span id="r-tot" style="font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: 64px; line-height: 1">€ 0</span><span id="r-cad" style="font-size: 15px; color: #D9D3C9"></span></div>
 <div id="r-righe" style="display: flex; flex-direction: column; font-size: 15px"></div>
 <p id="r-avviso" style="margin: 0; font-size: 14px; line-height: 1.5; color: #F2C3B9" hidden></p>
-<p style="margin: 0; font-size: 13px; line-height: 1.5; color: #A29B90">Stima indicativa. Il prezzo finale dipende da colori, dettagli della personalizzazione e tempi di consegna.</p>
-<a class="btn" id="r-invia" href="contatti.html" style="text-decoration: none; text-align: center; padding: 16px 22px; background: #D97757; color: #1A1A1A; font-weight: 600; font-size: 16px">Richiedi il preventivo con questi dati</a>
+<p style="margin: 0; font-size: 13px; line-height: 1.5; color: #A29B90">Stima indicativa: il prezzo finale viene confermato nel preventivo.</p>
+<a id="r-invia" class="btn" href="contatti.html" style="text-decoration: none; text-align: center; padding: 16px 22px; background: #D97757; color: #1A1A1A; font-weight: 600; font-size: 16px">Richiedi il preventivo con questi dati</a>
 </aside>
 </form>
+<div class="panel" style="margin-top: 24px; background: #D97757; color: #1A1A1A; padding: 32px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px 40px">
+<div style="display: flex; flex-direction: column; gap: 8px; max-width: 720px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase">Su misura</span>
+<h3 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: clamp(28px, 3vw, 40px); line-height: 1">Una linea tutta vostra, disegnata da zero</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55">Forme, proporzioni e dettagli pensati apposta per il vostro matrimonio o la vostra cerimonia. È un progetto dedicato: raccontateci l'idea e vi prepariamo una proposta.</p>
+</div>
+<a class="btn" href="contatti.html?tipo=Event%20Gift%20%2F%20bomboniere&amp;messaggio=Vorrei%20una%20linea%20di%20bomboniere%20dedicata%2C%20progettata%20da%20zero%20per%20il%20nostro%20evento.%20" style="text-decoration: none; padding: 16px 26px; background: #1A1A1A; color: #F5F2ED; font-weight: 600; font-size: 16px; white-space: nowrap">Progettiamo la vostra linea →</a>
+</div>
 </section>
 <section style="max-width: 1360px; margin: 0 auto; padding: 104px 24px">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px 56px; align-items: end; margin-bottom: 40px">
@@ -261,64 +273,63 @@ if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 </footer>
 </div>
 <script>
-/* ===== LISTINO BOMBONIERE — modificare qui i prezzi =====
-   Tutti i valori sono in euro. */
+/* ============ LISTINO EVENT GIFT — modificare qui i prezzi (euro) ============ */
 var LISTINO = {
-  vasi: {"origami": [{"h": 8.2, "p": 10}, {"h": 8.2, "p": 10}, {"h": 16.2, "p": 10}, {"h": 16.2, "p": 10}, {"h": 23.6, "p": 10}], "sweep": [{"h": 14.5, "p": 10}, {"h": 17, "p": 10}, {"h": 16.5, "p": 10}, {"h": 19, "p": 10}], "quadrifoglio": [{"h": 7.5, "p": 10}, {"h": 11.5, "p": 10}, {"h": 15.5, "p": 10}, {"h": 18.5, "p": 10}], "olympia": [{"h": 8.5, "p": 10}, {"h": 12, "p": 10}, {"h": 15, "p": 10}, {"h": 15, "p": 10}, {"h": 18, "p": 10}]},
-  personalizzazione: {            // costo aggiuntivo per pezzo + costo fisso una tantum
-    nessuna:  { pezzo: 0, fisso: 0 },
-    iniziali: { pezzo: 2, fisso: 0 },
-    grafica:  { pezzo: 3, fisso: 50 }
-  },
-  nfc: 3,                          // costo aggiuntivo per pezzo
-  sconti: [                        // sconto per quantità (dal numero di pezzi indicato in su)
-    { da: 150, sconto: 0.15 },
-    { da: 100, sconto: 0.10 },
-    { da: 60,  sconto: 0.05 }
-  ],
-  minimoPezzi: 20,
-  settimaneMinime: 6               // anticipo consigliato rispetto alla data dell'evento
+  /* prezzo di ogni misura, per linea (h = altezza in cm, p = prezzo a bomboniera) */
+  vasi: {"origami": [{"h": 8.2, "p": 8}, {"h": 8.2, "p": 8}, {"h": 16.2, "p": 10.5}, {"h": 16.2, "p": 10.5}, {"h": 23.6, "p": 13}], "sweep": [{"h": 14.5, "p": 9.5}, {"h": 17, "p": 10}, {"h": 16.5, "p": 10}, {"h": 19, "p": 10.5}], "quadrifoglio": [{"h": 7.5, "p": 8}, {"h": 11.5, "p": 9.5}, {"h": 15.5, "p": 11}, {"h": 18.5, "p": 11.5}], "olympia": [{"h": 8.5, "p": 8}, {"h": 12, "p": 9.5}, {"h": 15, "p": 10.5}, {"h": 15, "p": 10.5}, {"h": 18, "p": 11.5}]},
+  /* maggiorazione sul vasetto in base al numero di colori: 1 colore, 2, 3, 4, 5, più di 5 */
+  colori: { 1: 0, 2: 0.04, 3: 0.08, 4: 0.12, 5: 0.16, 6: 0.20 },
+  iniziali: 2,                     // iniziali e data, a bomboniera
+  nfc: 1,                          // tag NFC, a bomboniera
+  /* sconto quantità sul totale: dal numero di pezzi indicato in su */
+  sconti: [ { da: 200, sconto: 0.15 }, { da: 150, sconto: 0.12 }, { da: 100, sconto: 0.10 }, { da: 50, sconto: 0.05 } ],
+  minimoPezzi: 30,
+  settimaneMinime: 6
 };
-/* ======================================================== */
+/* ============================================================================ */
 (function(){
   var nomi = {origami:'Origami', sweep:'Sweep', quadrifoglio:'Quadrifoglio', olympia:'Olympia'};
-  var persNomi = {nessuna:'Nessuna', iniziali:'Iniziali e data', grafica:'Grafica dedicata'};
   var $ = function(id){ return document.getElementById(id); };
-  var eur = function(n){ return '€ ' + n.toLocaleString('it-IT', {minimumFractionDigits: n % 1 ? 2 : 0, maximumFractionDigits: 2}); };
+  var eur = function(n){ n = Math.round(n * 100) / 100; return '€ ' + n.toLocaleString('it-IT', {minimumFractionDigits: n % 1 ? 2 : 0, maximumFractionDigits: 2}); };
   var cm = function(h){ return String(h).replace('.', ','); };
   function misure(){
-    var l = $('c-linea').value, sel = $('c-misura'), v = LISTINO.vasi[l];
-    sel.innerHTML = '';
-    var o = document.createElement('option'); o.value = 'mix'; o.textContent = 'Mix di tutte le misure'; sel.appendChild(o);
-    v.forEach(function(x, i){ var o = document.createElement('option'); o.value = i; o.textContent = 'Modello ' + (i + 1) + ' · altezza ' + cm(x.h) + ' cm'; sel.appendChild(o); });
+    var v = LISTINO.vasi[$('c-linea').value], sel = $('c-misura'); sel.innerHTML = '';
+    var avg = v.reduce(function(s, x){ return s + x.p; }, 0) / v.length;
+    var o = document.createElement('option'); o.value = 'mix'; o.textContent = 'Mix di tutte le misure · ' + eur(avg); sel.appendChild(o);
+    v.forEach(function(x, i){ var o = document.createElement('option'); o.value = i; o.textContent = 'Altezza ' + cm(x.h) + ' cm · ' + eur(x.p); sel.appendChild(o); });
   }
   function calcola(){
     var l = $('c-linea').value, m = $('c-misura').value, v = LISTINO.vasi[l];
     var q = Math.max(0, Math.floor(+$('c-qta').value || 0));
-    var pers = (document.querySelector('input[name="pers"]:checked') || {}).value || 'nessuna';
-    var nfc = $('c-nfc').checked;
+    var nc = +((document.querySelector('input[name="colori"]:checked') || {}).value || 1);
+    var ini = $('c-iniziali').checked, nfc = $('c-nfc').checked;
     var base = m === 'mix' ? v.reduce(function(s, x){ return s + x.p; }, 0) / v.length : v[+m].p;
-    var P = LISTINO.personalizzazione[pers];
-    var unit = base + P.pezzo + (nfc ? LISTINO.nfc : 0);
+    var magg = LISTINO.colori[nc] || 0;
+    var unit = base * (1 + magg) + (ini ? LISTINO.iniziali : 0) + (nfc ? LISTINO.nfc : 0);
     var sc = 0; LISTINO.sconti.forEach(function(s){ if (q >= s.da && s.sconto > sc) sc = s.sconto; });
-    var lordo = unit * q, sconto = lordo * sc, tot = lordo - sconto + (q ? P.fisso : 0);
-    var r = [['Prezzo per pezzo', eur(unit)], ['Pezzi', String(q)]];
-    if (sconto) r.push(['Sconto quantità (' + Math.round(sc * 100) + '%)', '− ' + eur(sconto)]);
-    if (P.fisso && q) r.push(['Progettazione grafica', eur(P.fisso)]);
+    var lordo = unit * q, sconto = lordo * sc, tot = lordo - sconto;
+    var r = [['Vasetto (' + (m === 'mix' ? 'mix di misure' : cm(v[+m].h) + ' cm') + ')', eur(base)]];
+    if (magg) r.push([(nc > 5 ? 'Più di 5' : nc) + ' colori (+' + Math.round(magg * 100) + '%)', '+ ' + eur(base * magg)]);
+    if (ini) r.push(['Iniziali e data', '+ ' + eur(LISTINO.iniziali)]);
+    if (nfc) r.push(['Tag NFC', '+ ' + eur(LISTINO.nfc)]);
+    r.push(['Prezzo a bomboniera', eur(unit)], ['Bomboniere', String(q)]);
+    if (sconto) r.push(['Sconto quantità (−' + Math.round(sc * 100) + '%)', '− ' + eur(sconto)]);
     $('r-righe').innerHTML = r.map(function(x){ return '<div class="riga"><span>' + x[0] + '</span><span>' + x[1] + '</span></div>'; }).join('');
-    $('r-tot').textContent = eur(Math.round(tot * 100) / 100);
+    $('r-tot').textContent = eur(tot);
+    $('r-cad').textContent = q ? 'pari a ' + eur(tot / q) + ' a bomboniera' : '';
     var avv = [];
-    if (q && q < LISTINO.minimoPezzi) avv.push('L\'ordine minimo è di ' + LISTINO.minimoPezzi + ' pezzi.');
+    if (q && q < LISTINO.minimoPezzi) avv.push('L\'ordine minimo è di ' + LISTINO.minimoPezzi + ' bomboniere.');
+    var prossimo = LISTINO.sconti.slice().reverse().filter(function(s){ return s.da > q; })[0];
+    if (q && prossimo && prossimo.da - q <= 20) avv.push('Con ' + (prossimo.da - q) + ' bomboniere in più lo sconto sale al ' + Math.round(prossimo.sconto * 100) + '%.');
     var d = $('c-data').value;
     if (d) { var gg = (new Date(d) - new Date()) / 864e5; if (gg < LISTINO.settimaneMinime * 7) avv.push('Mancano meno di ' + LISTINO.settimaneMinime + ' settimane all\'evento: scriveteci subito per verificare i tempi.'); }
     $('r-avviso').textContent = avv.join(' '); $('r-avviso').hidden = !avv.length;
-    var mis = m === 'mix' ? 'mix di misure' : 'modello ' + (+m + 1) + ' (' + cm(v[+m].h) + ' cm)';
-    var msg = 'Event Gift: linea ' + nomi[l] + ', ' + mis + ', ' + q + ' pezzi. Personalizzazione: ' + persNomi[pers] + '. Tag NFC: ' + (nfc ? 'sì' : 'no') + '.' + (d ? ' Data evento: ' + d.split('-').reverse().join('/') + '.' : '') + ' Stima dal sito: ' + eur(Math.round(tot * 100) / 100) + '.';
+    var mis = m === 'mix' ? 'mix di misure' : 'altezza ' + cm(v[+m].h) + ' cm';
+    var msg = 'Event Gift: linea ' + nomi[l] + ', ' + mis + ', ' + q + ' bomboniere, ' + (nc > 5 ? 'più di 5' : nc) + (nc === 1 ? ' colore' : ' colori') + '. Iniziali e data: ' + (ini ? 'sì' : 'no') + '. Tag NFC: ' + (nfc ? 'sì' : 'no') + '.' + (d ? ' Data evento: ' + d.split('-').reverse().join('/') + '.' : '') + ' Stima dal sito: ' + eur(tot) + '.';
     $('r-invia').href = 'contatti.html?tipo=' + encodeURIComponent('Event Gift / bomboniere') + '&messaggio=' + encodeURIComponent(msg) + (d ? '&scadenza=' + d : '');
   }
   $('c-linea').addEventListener('change', function(){ misure(); calcola(); });
-  $('calc').addEventListener('input', calcola);
-  $('calc').addEventListener('change', calcola);
+  $('calc').addEventListener('input', calcola); $('calc').addEventListener('change', calcola);
   misure(); calcola();
 })();
 </script>
