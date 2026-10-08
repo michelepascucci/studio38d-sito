@@ -275,8 +275,8 @@ if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 <script>
 /* ============ LISTINO EVENT GIFT — modificare qui i prezzi (euro) ============ */
 var LISTINO = {
-  /* prezzo di ogni misura, per linea (h = altezza in cm, p = prezzo a bomboniera) */
-  vasi: {"origami": [{"h": 8.2, "p": 8}, {"h": 8.2, "p": 8}, {"h": 16.2, "p": 10.5}, {"h": 16.2, "p": 10.5}, {"h": 23.6, "p": 13}], "sweep": [{"h": 14.5, "p": 9.5}, {"h": 17, "p": 10}, {"h": 16.5, "p": 10}, {"h": 19, "p": 10.5}], "quadrifoglio": [{"h": 7.5, "p": 8}, {"h": 11.5, "p": 9.5}, {"h": 15.5, "p": 11}, {"h": 18.5, "p": 11.5}], "olympia": [{"h": 8.5, "p": 8}, {"h": 12, "p": 9.5}, {"h": 15, "p": 10.5}, {"h": 15, "p": 10.5}, {"h": 18, "p": 11.5}]},
+  /* misure di ogni linea: c = codice prodotto, h = altezza in cm, p = prezzo a bomboniera */
+  vasi: {"origami": [{"h": 8.2, "p": 8, "c": "#VO1"}, {"h": 8.2, "p": 8, "c": "#VO2"}, {"h": 16.2, "p": 10.5, "c": "#VO3"}, {"h": 16.2, "p": 10.5, "c": "#VO4"}, {"h": 23.6, "p": 13, "c": "#VO5"}], "sweep": [{"h": 14.5, "p": 9.5, "c": "#VS01"}, {"h": 17, "p": 10, "c": "#VS02"}, {"h": 16.5, "p": 10, "c": "#VS03"}, {"h": 19, "p": 10.5, "c": "#VS04"}], "quadrifoglio": [{"h": 7.5, "p": 8, "c": "#VQ01"}, {"h": 11.5, "p": 9.5, "c": "#VQ02"}, {"h": 15.5, "p": 11, "c": "#VQ03"}, {"h": 18.5, "p": 11.5, "c": "#VQ04"}], "olympia": [{"h": 8.5, "p": 8, "c": "#VOL01"}, {"h": 12, "p": 9.5, "c": "#VOL02"}, {"h": 15, "p": 10.5, "c": "#VOL03"}, {"h": 15, "p": 10.5, "c": "#VOL04"}, {"h": 18, "p": 11.5, "c": "#VOL05"}]},
   /* maggiorazione sul vasetto in base al numero di colori: 1 colore, 2, 3, 4, 5, più di 5 */
   colori: { 1: 0, 2: 0.04, 3: 0.08, 4: 0.12, 5: 0.16, 6: 0.20 },
   iniziali: 2,                     // iniziali e data, a bomboniera
@@ -293,9 +293,8 @@ var LISTINO = {
   var cm = function(h){ return String(h).replace('.', ','); };
   function misure(){
     var v = LISTINO.vasi[$('c-linea').value], sel = $('c-misura'); sel.innerHTML = '';
-    var avg = v.reduce(function(s, x){ return s + x.p; }, 0) / v.length;
-    var o = document.createElement('option'); o.value = 'mix'; o.textContent = 'Mix di tutte le misure · ' + eur(avg); sel.appendChild(o);
-    v.forEach(function(x, i){ var o = document.createElement('option'); o.value = i; o.textContent = 'Altezza ' + cm(x.h) + ' cm · ' + eur(x.p); sel.appendChild(o); });
+    var o = document.createElement('option'); o.value = 'mix'; o.textContent = 'Mix di tutte le misure'; sel.appendChild(o);
+    v.forEach(function(x, i){ var o = document.createElement('option'); o.value = i; o.textContent = x.c + ' (h = ' + cm(x.h) + ' cm)'; sel.appendChild(o); });
   }
   function calcola(){
     var l = $('c-linea').value, m = $('c-misura').value, v = LISTINO.vasi[l];
@@ -307,7 +306,7 @@ var LISTINO = {
     var unit = base * (1 + magg) + (ini ? LISTINO.iniziali : 0) + (nfc ? LISTINO.nfc : 0);
     var sc = 0; LISTINO.sconti.forEach(function(s){ if (q >= s.da && s.sconto > sc) sc = s.sconto; });
     var lordo = unit * q, sconto = lordo * sc, tot = lordo - sconto;
-    var r = [['Vasetto (' + (m === 'mix' ? 'mix di misure' : cm(v[+m].h) + ' cm') + ')', eur(base)]];
+    var r = [['Vasetto ' + (m === 'mix' ? '(mix di misure)' : v[+m].c + ' (h = ' + cm(v[+m].h) + ' cm)'), eur(base)]];
     if (magg) r.push([(nc > 5 ? 'Più di 5' : nc) + ' colori (+' + Math.round(magg * 100) + '%)', '+ ' + eur(base * magg)]);
     if (ini) r.push(['Iniziali e data', '+ ' + eur(LISTINO.iniziali)]);
     if (nfc) r.push(['Tag NFC', '+ ' + eur(LISTINO.nfc)]);
@@ -322,7 +321,7 @@ var LISTINO = {
     var d = $('c-data').value;
     if (d) { var gg = (new Date(d) - new Date()) / 864e5; if (gg < LISTINO.settimaneMinime * 7) avv.push('Mancano meno di ' + LISTINO.settimaneMinime + ' settimane all\'evento: scriveteci subito per verificare i tempi.'); }
     $('r-avviso').textContent = avv.join(' '); $('r-avviso').hidden = !avv.length;
-    var mis = m === 'mix' ? 'mix di misure' : 'altezza ' + cm(v[+m].h) + ' cm';
+    var mis = m === 'mix' ? 'mix di misure' : 'modello ' + v[+m].c + ' (h = ' + cm(v[+m].h) + ' cm)';
     var msg = 'Event Gift: linea ' + nomi[l] + ', ' + mis + ', ' + q + ' bomboniere, ' + (nc > 5 ? 'più di 5' : nc) + (nc === 1 ? ' colore' : ' colori') + '. Iniziali e data: ' + (ini ? 'sì' : 'no') + '. Tag NFC: ' + (nfc ? 'sì' : 'no') + '.' + (d ? ' Data evento: ' + d.split('-').reverse().join('/') + '.' : '') + ' Stima dal sito: ' + eur(tot) + '.';
     $('r-invia').href = 'contatti.html?tipo=' + encodeURIComponent('Event Gift / bomboniere') + '&messaggio=' + encodeURIComponent(msg) + (d ? '&scadenza=' + d : '');
   }
