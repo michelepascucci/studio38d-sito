@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sweep – STUDIO38D</title>
+<meta name="description" content="Prende il nome dal comando di modellazione 3D che fa scorrere un profilo lungo un percorso, generando la forma come una traccia continua. Così nasce questa linea: un&#x27;unica sezione che si piega e si avvolge su sé stessa.">
+<meta property="og:title" content="Sweep – STUDIO38D">
+<meta property="og:description" content="Prende il nome dal comando di modellazione 3D che fa scorrere un profilo lungo un percorso, generando la forma come una traccia continua. Così nasce questa linea: un&#x27;unica sezione che si piega e si avvolge su sé stessa.">
+<meta property="og:type" content="product">
+<meta property="og:image" content="https://www.studio38d.com/img/sweep-1.webp">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/inter-tight-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Inter Tight';font-style:normal;font-display:swap;font-weight:100 900;src:url(fonts/inter-tight-latin-ext-wght-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Inter Tight';font-style:normal;font-display:swap;font-weight:100 900;src:url(fonts/inter-tight-latin-wght-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
+<style>
+body{margin:0;background:#F5F2ED}
+a{color:#1A1A1A}a:hover{color:#D97757}
+.ph{background:repeating-linear-gradient(0deg,#E2D9CB 0 2px,#EDE7DF 2px 7px);display:flex;align-items:center;justify-content:center;font-family:'Inter Tight',sans-serif;font-weight:600;font-size:12px;color:#5B6270;text-transform:uppercase;letter-spacing:.06em;text-align:center;padding:16px;box-sizing:border-box}
+.pcard{position:relative}.pcard .plink{position:absolute;inset:0;z-index:2;border-radius:20px}.pcard .plink:focus-visible{outline:2px solid #D97757;outline-offset:4px}.pcard .more{font-size:14px;font-weight:600;color:#A9512F}.pcard:hover h3{color:#D97757}
+.pcard .alt{opacity:0;transition:opacity .35s}.pcard:hover .alt{opacity:1}
+.pimg{position:relative;aspect-ratio:2/3;overflow:hidden;background:#EDE7DF;border-radius:20px}.pimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+
+.brand{display:inline-flex!important;align-items:center;gap:12px;font-family:"Inter Tight",sans-serif;font-weight:900;letter-spacing:-.045em;font-size:28px;line-height:1;text-decoration:none!important;color:#1A1A1A;white-space:nowrap}
+/* === Tema Argilla === */
+body{font-family:'Inter Tight',sans-serif}
+img,.ph,.pimg{border-radius:20px}
+.pimg,.ph{overflow:hidden}
+.btn{border-radius:999px!important}
+.card,.panel{border-radius:24px!important;overflow:hidden}
+.tile{border-radius:18px!important}
+input,select,textarea{border-radius:12px!important}
+.opt{border-radius:14px!important}
+.chip{border-radius:999px!important}
+
+.pp-wrap{max-width:1360px;margin:0 auto;padding:28px 24px 72px}
+.pp-crumb{font-size:14px;color:#5B6270;display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.pp-crumb a{color:#5B6270;text-decoration:none}.pp-crumb a:hover{color:#D97757}
+.pp-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:56px;align-items:start}
+@media (max-width:900px){.pp-grid{grid-template-columns:1fr;gap:32px}}
+.pp-gal{display:flex;flex-direction:column;gap:12px;position:sticky;top:24px}
+@media (max-width:900px){.pp-gal{position:static}}
+.pp-main{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:#EDE7DF}
+.pp-thumbs{display:flex;gap:10px;flex-wrap:wrap}
+.pp-thumbs button{padding:0;border:2px solid transparent;background:none;cursor:pointer;border-radius:14px;line-height:0}
+.pp-thumbs button[aria-pressed="true"]{border-color:#1A1A1A}
+.pp-thumbs img{width:76px;height:96px;object-fit:cover;border-radius:12px;display:block}
+.pp-info{display:flex;flex-direction:column;gap:22px;min-width:0}.pp-info>div{min-width:0}
+.pp-sw{display:flex;flex-wrap:wrap;gap:14px 18px}
+.pp-sw div{display:flex;flex-direction:column;align-items:center;gap:6px;width:72px;text-align:center;font-size:12.5px;line-height:1.25;color:#3D4451}
+.pp-sw img{width:44px;height:44px;border-radius:50%!important;box-shadow:0 0 0 1px #DCD3C4;display:block}
+.pp-sw.leg img{width:56px;height:56px;border-radius:14px!important}
+.pp-specs{margin:0;border-top:1px solid #DCD3C4}
+.pp-specs div{display:grid;grid-template-columns:130px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid #DCD3C4;font-size:15px}
+.pp-specs dt{color:#5B6270}.pp-specs dd{margin:0}
+.pp-pill{display:inline-block;border:1.5px solid #1A1A1A;border-radius:999px;padding:3px 10px;font-size:12px;font-weight:700;letter-spacing:.04em;margin-right:6px}
+.pp-abaco{display:flex;align-items:flex-end;gap:18px;overflow-x:auto;padding:8px 2px 0}
+.pp-abaco figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:10px;flex:none}
+.pp-abaco .fig{display:flex;align-items:flex-end;justify-content:center;border-bottom:1.5px solid #1A1A1A;padding:0 4px}
+.pp-abaco img{border-radius:0!important;display:block}
+.pp-abaco figcaption{font-size:13px;line-height:1.35;text-align:center}
+.pp-abaco figcaption b{display:block;font-weight:800;font-size:14px}
+.pp-more{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,160px),1fr));gap:28px 20px}
+.pp-more a{text-decoration:none;display:flex;flex-direction:column;gap:10px}
+.pp-more img{width:100%;aspect-ratio:2/3;object-fit:cover;display:block}
+</style>
+<script>
+/* Apri sempre la pagina dall'inizio (tranne quando il link punta a una sezione, es. #preventivo) */
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+(function(){ function top(){ if (!location.hash) window.scrollTo(0, 0); }
+  top(); window.addEventListener('load', top); window.addEventListener('pageshow', top); })();
+</script>
+</head>
+<body>
+<div style="font-family: Inter Tight, sans-serif; color: #1A1A1A; background: #F5F2ED; width: 100%">
+<header style="border-bottom: 1px solid #DCD3C4">
+<nav style="max-width: 1360px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px">
+<a href="index.html" class="brand" style="font-family: Inter Tight, sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: 28px; text-decoration: none; color: #1A1A1A; display: inline-flex; align-items: center; gap: 12px"><img src="img/logo.svg" alt="" width="40" height="40" style="width: 40px; height: 40px; display: block; border-radius: 0"><span>STUDIO<span style="color: #D97757">3</span>8<span style="color: #D97757">D</span></span></a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-size: 15px; font-weight: 500">
+<a href="collezioni.html" style="text-decoration: none; padding: 10px 0; border-bottom: 2px solid #D97757">Collezioni</a>
+<a href="event-gift.html" style="text-decoration: none; padding: 10px 0">Event Gift</a>
+<a href="su-misura.html" style="text-decoration: none; padding: 10px 0">Su misura</a>
+<a href="rivenditori.html" style="text-decoration: none; padding: 10px 0">Rivenditori</a>
+<a href="studio.html" style="text-decoration: none; padding: 10px 0">Lo studio</a>
+<a class="btn" href="contatti.html" style="text-decoration: none; padding: 12px 20px; background: #1A1A1A; color: #F5F2ED">Richiedi un preventivo</a>
+</div>
+</nav>
+</header>
+<main class="pp-wrap"><nav class="pp-crumb" aria-label="Percorso"><a href="collezioni.html">Collezioni</a><span>/</span><a href="collezioni.html#vasi">Vasi</a><span>/</span><span style="color: #1A1A1A">Sweep</span></nav><div class="pp-grid"><div class="pp-gal"><img class="pp-main" id="ppMain" src="img/sweep-1.webp" alt="Sweep" width="800" height="1000"><div class="pp-thumbs"><button type="button" aria-pressed="true" data-src="img/sweep-1.webp"><img src="img/sweep-1.webp" alt="" loading="lazy" width="76" height="96"></button><button type="button" aria-pressed="false" data-src="img/sweep-2.webp"><img src="img/sweep-2.webp" alt="" loading="lazy" width="76" height="96"></button></div></div><div class="pp-info"><div style="font-weight: 600; font-size: 13px; color: #A9512F">Vasi</div><h1 style="margin: -10px 0 0; font-family: Inter Tight, sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: clamp(44px, 5.4vw, 80px); line-height: 0.95">Sweep</h1><p style="margin: 0; font-size: 18px; line-height: 1.6; color: #262626">Prende il nome dal comando di modellazione 3D che fa scorrere un profilo lungo un percorso, generando la forma come una traccia continua. Così nasce questa linea: un&#x27;unica sezione che si piega e si avvolge su sé stessa.</p><div style="display: flex; flex-direction: column; gap: 12px"><div style="font-family: Inter Tight, sans-serif; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #5B6270">Le misure</div><div class="pp-abaco"><figure><div class="fig" style="height: 159px"><img src="img/profili/vs01.webp" alt="Profilo VS01" style="height: 117px; width: 108px" loading="lazy"></div><figcaption><b>#VS01</b>h 14,5 cm</figcaption></figure><figure><div class="fig" style="height: 159px"><img src="img/profili/vs02.webp" alt="Profilo VS02" style="height: 137px; width: 140px" loading="lazy"></div><figcaption><b>#VS02</b>h 17 cm</figcaption></figure><figure><div class="fig" style="height: 159px"><img src="img/profili/vs03.webp" alt="Profilo VS03" style="height: 133px; width: 109px" loading="lazy"></div><figcaption><b>#VS03</b>h 16,5 cm</figcaption></figure><figure><div class="fig" style="height: 159px"><img src="img/profili/vs04.webp" alt="Profilo VS04" style="height: 153px; width: 85px" loading="lazy"></div><figcaption><b>#VS04</b>h 19 cm</figcaption></figure></div></div><div style="display: flex; flex-direction: column; gap: 12px"><div style="font-family: Inter Tight, sans-serif; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #5B6270">Colori consigliati</div><div class="pp-sw"><div><img src="img/colori/blue-navy.webp" alt="" width="44" height="44" loading="lazy">Blue Navy</div><div><img src="img/colori/malt.webp" alt="" width="44" height="44" loading="lazy">Malt</div><div><img src="img/colori/ash-purple.webp" alt="" width="44" height="44" loading="lazy">Ash Purple</div><div><img src="img/colori/terracotta.webp" alt="" width="44" height="44" loading="lazy">Terracotta</div></div><div style="font-size: 14px; color: #5B6270">Altri colori su richiesta.</div></div><div style="display: flex; flex-direction: column; gap: 12px"><div style="font-family: Inter Tight, sans-serif; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #5B6270">Scheda tecnica</div><dl class="pp-specs"><div><dt>Produzione</dt><dd>Progettato e stampato in 3D a Roma</dd></div></dl></div><div style="display: flex; flex-wrap: wrap; gap: 12px"><a class="btn" href="contatti.html?messaggio=Vorrei%20informazioni%20su%20Sweep." style="text-decoration: none; padding: 16px 26px; background: #1A1A1A; color: #F5F2ED; font-weight: 600; font-size: 16px">Chiedi disponibilità</a><a class="btn" href="event-gift.html" style="text-decoration: none; padding: 16px 26px; border: 1px solid #1A1A1A; font-weight: 600; font-size: 16px">Come bomboniera →</a></div></div></div></main>
+<section style="max-width: 1360px; margin: 0 auto; padding: 24px 24px 88px"><h2 style="margin: 0 0 28px; font-family: Inter Tight, sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: clamp(32px, 3.4vw, 48px); line-height: 0.95; border-top: 2px solid #1A1A1A; padding-top: 28px">Altro dalla collezione Vasi</h2><div class="pp-more"><a href="vaso-origami.html"><img src="img/origami-1.webp" alt="" loading="lazy" width="400" height="600"><span style="font-weight: 800; font-size: 20px; letter-spacing: -0.03em">Origami</span></a><a href="vaso-quadrifoglio.html"><img src="img/quadrifoglio-1.webp" alt="" loading="lazy" width="400" height="600"><span style="font-weight: 800; font-size: 20px; letter-spacing: -0.03em">Quadrifoglio</span></a><a href="vaso-olympia.html"><img src="img/olympia-1.webp" alt="" loading="lazy" width="400" height="600"><span style="font-weight: 800; font-size: 20px; letter-spacing: -0.03em">Olympia</span></a></div></section>
+<footer style="background: #1A1A1A; color: #D9D3C9">
+<div style="max-width: 1360px; margin: 0 auto; padding: 40px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 32px; font-size: 14px; font-family: Inter Tight, sans-serif; font-weight: 600">
+<span style="color: #F5F2ED; display: inline-flex; align-items: center; gap: 12px"><img src="img/logo-chiaro.svg" alt="STUDIO38D" width="32" height="32" style="width: 32px; height: 32px; display: block; border-radius: 0">Built, not rendered.</span>
+<span>Via Alberto Ascari 38D, Roma · info@studio38d.com · @studio38d</span>
+</div>
+<div style="max-width: 1360px; margin: 0 auto; padding: 0 24px 28px; font-size: 12px; color: #A29B90">STUDIO38D S.r.l. · Via Alberto Ascari 38D, 00142 Roma · C.F. e P.IVA 18445081005 · PEC studio38d@ultracert.it · <a href="privacy.html" style="color: #A29B90">Privacy</a></div>
+</footer>
+</div>
+<script>
+document.querySelectorAll('.pp-thumbs button').forEach(function(b){b.addEventListener('click',function(){
+document.getElementById('ppMain').src=b.dataset.src;document.querySelectorAll('.pp-thumbs button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});});});
+</script>
+</body>
+</html>
