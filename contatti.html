@@ -28,6 +28,12 @@ input,select,textarea{border-radius:12px!important}
 .opt{border-radius:14px!important}
 .chip{border-radius:999px!important}
 </style>
+<script>
+/* Apri sempre la pagina dall'inizio (tranne quando il link punta a una sezione, es. #preventivo) */
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+(function(){ function top(){ if (!location.hash) window.scrollTo(0, 0); }
+  top(); window.addEventListener('load', top); window.addEventListener('pageshow', top); })();
+</script>
 </head>
 <body>
 <div style="font-family: 'Inter Tight', sans-serif; color: #1A1A1A; background: #F5F2ED; width: 100%">
