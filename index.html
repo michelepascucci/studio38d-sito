@@ -10,47 +10,58 @@
 <meta property="og:type" content="website">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
 <style>
-body{margin:0;background:#EEEAE3}
-a{color:#191816}a:hover{color:#B3261E}
-.ph{background:repeating-linear-gradient(0deg,#D8D0C3 0 2px,#E5DFD5 2px 7px);display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#454039;text-transform:uppercase;letter-spacing:.06em;text-align:center;padding:16px;box-sizing:border-box}
-.ph-dark{background:repeating-linear-gradient(0deg,#2A2825 0 2px,#22201E 2px 7px);color:#BDB6AA}
-.card:hover{border-color:#191816}
+body{margin:0;background:#F5F2ED}
+a{color:#1A1A1A}a:hover{color:#D97757}
+.ph{background:repeating-linear-gradient(0deg,#E2D9CB 0 2px,#EDE7DF 2px 7px);display:flex;align-items:center;justify-content:center;font-family:'Inter Tight',sans-serif;font-weight:600;font-size:12px;color:#5B6270;text-transform:uppercase;letter-spacing:.06em;text-align:center;padding:16px;box-sizing:border-box}
+.ph-dark{background:repeating-linear-gradient(0deg,#262626 0 2px,#1F1F1F 2px 7px);color:#BDB6AA}
+.card:hover{border-color:#1A1A1A}
+
+/* === Tema Argilla === */
+body{font-family:'Inter Tight',sans-serif}
+img,.ph,.pimg{border-radius:20px}
+.pimg,.ph{overflow:hidden}
+.btn{border-radius:999px!important}
+.card,.panel{border-radius:24px!important;overflow:hidden}
+.tile{border-radius:18px!important}
+input,select,textarea{border-radius:12px!important}
+.opt{border-radius:14px!important}
+.chip{border-radius:999px!important}
 </style>
 </head>
 <body>
-<div style="font-family: 'IBM Plex Sans', sans-serif; color: #191816; background: #EEEAE3; width: 100%">
+<div style="font-family: 'Inter Tight', sans-serif; color: #1A1A1A; background: #F5F2ED; width: 100%">
 
-<header style="border-bottom: 1px solid #CFC7BA">
+<header style="border-bottom: 1px solid #DCD3C4">
 <nav style="max-width: 1360px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px">
-<a href="index.html" style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 28px; letter-spacing: 0.01em; text-decoration: none; color: #191816">STUDIO<span style="color: #B3261E">38D</span></a>
+<a href="index.html" style="font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: 28px; text-decoration: none; color: #1A1A1A">STUDIO<span style="color: #D97757">38D</span></a>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-size: 15px; font-weight: 500">
 <a href="collezioni.html" style="text-decoration: none; padding: 10px 0">Collezioni</a>
 <a href="event-gift.html" style="text-decoration: none; padding: 10px 0">Event Gift</a>
 <a href="su-misura.html" style="text-decoration: none; padding: 10px 0">Su misura</a>
 <a href="su-misura.html" style="text-decoration: none; padding: 10px 0">Rivenditori</a>
 <a href="#studio" style="text-decoration: none; padding: 10px 0">Lo studio</a>
-<a href="contatti.html" style="text-decoration: none; padding: 12px 20px; background: #191816; color: #EEEAE3">Richiedi un preventivo</a>
+<a class="btn" href="contatti.html" style="text-decoration: none; padding: 12px 20px; background: #1A1A1A; color: #F5F2ED">Richiedi un preventivo</a>
 </div>
 </nav>
 </header>
 
 <section style="max-width: 1360px; margin: 0 auto; padding: 72px 24px 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr)); gap: 48px; align-items: end">
 <div style="display: flex; flex-direction: column; gap: 28px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5C574F">Studio di design · Manifattura additiva · Roma</div>
-<h1 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 70%; font-weight: 800; font-size: clamp(64px, 11vw, 168px); line-height: 0.86; letter-spacing: -0.01em; text-transform: uppercase">Built,<br><span style="color: #B3261E">not</span> rendered.</h1>
-<p style="margin: 0; font-size: 20px; line-height: 1.55; max-width: 560px; color: #2E2B27">Seguiamo ogni progetto dall'idea all'oggetto finito: progettazione, modellazione 3D e produzione, con un unico team a Roma. Oggetti di design ispirati alla città, progetti su misura per aziende ed eventi, installazioni di grande formato.</p>
+<div style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5B6270">Studio di design · Manifattura additiva · Roma</div>
+<h1 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: clamp(64px, 11vw, 168px); line-height: 0.95">Built,<br><span style="color: #A9512F">not</span> rendered.</h1>
+<p style="margin: 0; font-size: 20px; line-height: 1.55; max-width: 560px; color: #262626">Seguiamo ogni progetto dall'idea all'oggetto finito: progettazione, modellazione 3D e produzione, con un unico team a Roma. Oggetti di design ispirati alla città, progetti su misura per aziende ed eventi, installazioni di grande formato.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
-<a href="collezioni.html" style="text-decoration: none; padding: 16px 26px; background: #B3261E; color: #FFFFFF; font-weight: 600; font-size: 16px">Scopri le collezioni</a>
-<a href="su-misura.html" style="text-decoration: none; padding: 15px 25px; border: 1px solid #191816; font-weight: 600; font-size: 16px">Hai un progetto su misura?</a>
+<a class="btn" href="collezioni.html" style="text-decoration: none; padding: 16px 26px; background: #D97757; color: #1A1A1A; font-weight: 600; font-size: 16px">Scopri le collezioni</a>
+<a class="btn" href="su-misura.html" style="text-decoration: none; padding: 15px 25px; border: 1px solid #1A1A1A; font-weight: 600; font-size: 16px">Hai un progetto su misura?</a>
 </div>
 </div>
 <img src="img/copertina.webp" alt="Vasi Origami e vaso a onde STUDIO38D in un interno" fetchpriority="high" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block">
 </section>
 
-<section style="border-top: 1px solid #CFC7BA; border-bottom: 1px solid #CFC7BA">
-<div style="max-width: 1360px; margin: 0 auto; padding: 22px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase">
+<section style="border-top: 1px solid #DCD3C4; border-bottom: 1px solid #DCD3C4">
+<div style="max-width: 1360px; margin: 0 auto; padding: 22px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase">
 <div>— Filiera interamente integrata</div>
 <div>— Ispirato a Roma</div>
 <div>— Dal pezzo unico alla serie</div>
@@ -60,32 +71,32 @@ a{color:#191816}a:hover{color:#B3261E}
 
 <section style="max-width: 1360px; margin: 0 auto; padding: 96px 24px 40px">
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 40px">
-<h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: clamp(40px, 5vw, 64px); line-height: 0.95; text-transform: uppercase">Cosa facciamo</h2>
-<p style="margin: 0; max-width: 460px; font-size: 17px; line-height: 1.55; color: #5C574F">Quattro modi di lavorare con noi: scegli da dove partire.</p>
+<h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: clamp(40px, 5vw, 64px); line-height: 0.95">Cosa facciamo</h2>
+<p style="margin: 0; max-width: 460px; font-size: 17px; line-height: 1.55; color: #5B6270">Quattro modi di lavorare con noi: scegli da dove partire.</p>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
-<a href="collezioni.html" class="card" style="text-decoration: none; border: 1px solid #CFC7BA; background: #F7F5F1; padding: 28px; display: flex; flex-direction: column; gap: 14px; min-height: 260px">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B3261E">01</span>
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 700; font-size: 30px; text-transform: uppercase; line-height: 1">Collezioni</span>
-<span style="font-size: 16px; line-height: 1.5; color: #4A463F">Lampade, vasi e oggetti da scrivania disegnati e prodotti da noi.</span>
+<a href="collezioni.html" class="card" style="text-decoration: none; border: 1px solid #DCD3C4; background: #EDE7DF; padding: 28px; display: flex; flex-direction: column; gap: 14px; min-height: 260px">
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 13px; color: #A9512F">01</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 800; letter-spacing: -0.03em; font-size: 30px; line-height: 1">Collezioni</span>
+<span style="font-size: 16px; line-height: 1.5; color: #3D4451">Lampade, vasi e oggetti da scrivania disegnati e prodotti da noi.</span>
 <span style="margin-top: auto; font-weight: 600; font-size: 15px">Vedi le collezioni →</span>
 </a>
-<a href="su-misura.html" class="card" style="text-decoration: none; border: 1px solid #CFC7BA; background: #F7F5F1; padding: 28px; display: flex; flex-direction: column; gap: 14px; min-height: 260px">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B3261E">02</span>
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 700; font-size: 30px; text-transform: uppercase; line-height: 1">Su misura</span>
-<span style="font-size: 16px; line-height: 1.5; color: #4A463F">Regali aziendali, installazioni, plastici e pezzi unici: dall'idea al pezzo finito.</span>
+<a href="su-misura.html" class="card" style="text-decoration: none; border: 1px solid #DCD3C4; background: #EDE7DF; padding: 28px; display: flex; flex-direction: column; gap: 14px; min-height: 260px">
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 13px; color: #A9512F">02</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 800; letter-spacing: -0.03em; font-size: 30px; line-height: 1">Su misura</span>
+<span style="font-size: 16px; line-height: 1.5; color: #3D4451">Regali aziendali, installazioni, plastici e pezzi unici: dall'idea al pezzo finito.</span>
 <span style="margin-top: auto; font-weight: 600; font-size: 15px">Come lavoriamo →</span>
 </a>
-<a href="event-gift.html" class="card" style="text-decoration: none; border: 1px solid #CFC7BA; background: #F7F5F1; padding: 28px; display: flex; flex-direction: column; gap: 14px; min-height: 260px">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B3261E">03</span>
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 700; font-size: 30px; text-transform: uppercase; line-height: 1">Event Gift</span>
-<span style="font-size: 16px; line-height: 1.5; color: #4A463F">Vasetti personalizzati per matrimoni e cerimonie: decorano i tavoli e diventano la bomboniera.</span>
+<a href="event-gift.html" class="card" style="text-decoration: none; border: 1px solid #DCD3C4; background: #EDE7DF; padding: 28px; display: flex; flex-direction: column; gap: 14px; min-height: 260px">
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 13px; color: #A9512F">03</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 800; letter-spacing: -0.03em; font-size: 30px; line-height: 1">Event Gift</span>
+<span style="font-size: 16px; line-height: 1.5; color: #3D4451">Vasetti personalizzati per matrimoni e cerimonie: decorano i tavoli e diventano la bomboniera.</span>
 <span style="margin-top: auto; font-weight: 600; font-size: 15px">Scopri gli Event Gift →</span>
 </a>
-<a href="su-misura.html" class="card" style="text-decoration: none; border: 1px solid #CFC7BA; background: #F7F5F1; padding: 28px; display: flex; flex-direction: column; gap: 14px; min-height: 260px">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B3261E">04</span>
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 700; font-size: 30px; text-transform: uppercase; line-height: 1">Rivenditori</span>
-<span style="font-size: 16px; line-height: 1.5; color: #4A463F">Porta le collezioni STUDIO38D nel tuo negozio. Catalogo e condizioni dedicate.</span>
+<a href="su-misura.html" class="card" style="text-decoration: none; border: 1px solid #DCD3C4; background: #EDE7DF; padding: 28px; display: flex; flex-direction: column; gap: 14px; min-height: 260px">
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 13px; color: #A9512F">04</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 800; letter-spacing: -0.03em; font-size: 30px; line-height: 1">Rivenditori</span>
+<span style="font-size: 16px; line-height: 1.5; color: #3D4451">Porta le collezioni STUDIO38D nel tuo negozio. Catalogo e condizioni dedicate.</span>
 <span style="margin-top: auto; font-weight: 600; font-size: 15px">Diventa rivenditore →</span>
 </a>
 </div>
@@ -93,122 +104,122 @@ a{color:#191816}a:hover{color:#B3261E}
 
 <section style="max-width: 1360px; margin: 0 auto; padding: 72px 24px 96px">
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 40px">
-<h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: clamp(40px, 5vw, 64px); line-height: 0.95; text-transform: uppercase">Le collezioni</h2>
+<h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: clamp(40px, 5vw, 64px); line-height: 0.95">Le collezioni</h2>
 <a href="collezioni.html" style="font-weight: 600; font-size: 16px; padding: 10px 0">Tutti i prodotti →</a>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 24px">
 <a href="collezioni.html" style="text-decoration: none; display: flex; flex-direction: column; gap: 14px">
 <img src="img/ercole-2.webp" alt="Lampada Ercole accesa" loading="lazy" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #5C574F">Lampade · 4 modelli</span>
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 700; font-size: 28px; text-transform: uppercase; line-height: 1">Roma</span>
-<span style="font-size: 16px; line-height: 1.5; color: #4A463F">Quattro architetture romane diventate luce: Palazzo della Civiltà Italiana, Gazometro, torri piezometriche, Tempio di Ercole.</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #5B6270">Lampade · 4 modelli</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 800; letter-spacing: -0.03em; font-size: 28px; line-height: 1">Roma</span>
+<span style="font-size: 16px; line-height: 1.5; color: #3D4451">Quattro architetture romane diventate luce: Palazzo della Civiltà Italiana, Gazometro, torri piezometriche, Tempio di Ercole.</span>
 </a>
 <a href="collezioni.html" style="text-decoration: none; display: flex; flex-direction: column; gap: 14px">
 <img src="img/origami-1.webp" alt="Vasi della linea Origami" loading="lazy" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #5C574F">Vasi · 4 linee</span>
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 700; font-size: 28px; text-transform: uppercase; line-height: 1">Origami, Sweep, Quadrifoglio, Olympia</span>
-<span style="font-size: 16px; line-height: 1.5; color: #4A463F">Ogni linea in 4–5 misure dello stesso stile, da comporre insieme.</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #5B6270">Vasi · 4 linee</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 800; letter-spacing: -0.03em; font-size: 28px; line-height: 1">Origami, Sweep, Quadrifoglio, Olympia</span>
+<span style="font-size: 16px; line-height: 1.5; color: #3D4451">Ogni linea in 4–5 misure dello stesso stile, da comporre insieme.</span>
 </a>
 <a href="collezioni.html" style="text-decoration: none; display: flex; flex-direction: column; gap: 14px">
 <img src="img/desktank-1.webp" alt="DeskTank, portapenne della linea Tank" loading="lazy" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #5C574F">Oggetti · 3 pezzi</span>
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 700; font-size: 28px; text-transform: uppercase; line-height: 1">Tank</span>
-<span style="font-size: 16px; line-height: 1.5; color: #4A463F">Il carrarmatino da tavolo più famoso, rimesso in servizio: portapenne, salvadanaio, fermaporta.</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #5B6270">Oggetti · 3 pezzi</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 800; letter-spacing: -0.03em; font-size: 28px; line-height: 1">Tank</span>
+<span style="font-size: 16px; line-height: 1.5; color: #3D4451">Il carrarmatino da tavolo più famoso, rimesso in servizio: portapenne, salvadanaio, fermaporta.</span>
 </a>
 <a href="collezioni.html" style="text-decoration: none; display: flex; flex-direction: column; gap: 14px">
 <img src="img/mappe-rilievo-2.webp" alt="Mappa in rilievo stampata in 3D" loading="lazy" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #5C574F">Su ordinazione</span>
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 700; font-size: 28px; text-transform: uppercase; line-height: 1">Mappe in rilievo</span>
-<span style="font-size: 16px; line-height: 1.5; color: #4A463F">Qualsiasi luogo, stampato in rilievo in moduli da 20×20 cm su pannello di legno.</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #5B6270">Su ordinazione</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 800; letter-spacing: -0.03em; font-size: 28px; line-height: 1">Mappe in rilievo</span>
+<span style="font-size: 16px; line-height: 1.5; color: #3D4451">Qualsiasi luogo, stampato in rilievo in moduli da 20×20 cm su pannello di legno.</span>
 </a>
 </div>
 </section>
 
-<section style="background: #191816; color: #EEEAE3">
+<section style="background: #1A1A1A; color: #F5F2ED">
 <div style="max-width: 1360px; margin: 0 auto; padding: 88px 24px">
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px 24px; padding-bottom: 20px; margin-bottom: 40px; border-bottom: 1px solid #3A3733">
-<div style="display: flex; align-items: center; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase"><span style="width: 10px; height: 10px; background: #B3261E; border-radius: 50%; display: inline-block"></span>Ultimo progetto</div>
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #A29B90">Settembre 2026 · Parco Schuster, Roma</span>
+<div style="display: flex; align-items: center; gap: 12px; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase"><span style="width: 10px; height: 10px; background: #D97757; border-radius: 50%; display: inline-block"></span>Ultimo progetto</div>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 13px; color: #A29B90">Settembre 2026 · Parco Schuster, Roma</span>
 </div>
 <article style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr)); gap: 48px; align-items: center">
 <a href="minotauro.html" class="ph ph-dark" style="aspect-ratio: 4 / 3; width: 100%; text-decoration: none">[Foto: il Minotauro al centro del labirinto]</a>
 <div style="display: flex; flex-direction: column; gap: 22px">
-<h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 70%; font-weight: 800; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.9; text-transform: uppercase">Un Minotauro di tre metri nel labirinto</h2>
+<h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.9">Un Minotauro di tre metri nel labirinto</h2>
 <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #D9D3C9">Per il Roma Sud Summer Fest abbiamo progettato e stampato in 3D una scultura monumentale in stile low poly: 363 pezzi ingegnerizzati uno per uno e assemblati in loco al centro del labirinto di Parco Schuster.</p>
-<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px"><div style="display: flex; flex-direction: column; gap: 4px; padding-top: 14px; border-top: 1px solid #3A3733"><span style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 40px; line-height: 1">3 m</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90">Altezza</span></div><div style="display: flex; flex-direction: column; gap: 4px; padding-top: 14px; border-top: 1px solid #3A3733"><span style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 40px; line-height: 1">363</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90">Pezzi</span></div><div style="display: flex; flex-direction: column; gap: 4px; padding-top: 14px; border-top: 1px solid #3A3733"><span style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 40px; line-height: 1">2.867</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90">Ore di stampa</span></div></div>
-<a href="minotauro.html" style="align-self: flex-start; text-decoration: none; padding: 16px 26px; background: #EEEAE3; color: #191816; font-weight: 600; font-size: 16px">Scopri di più →</a>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px"><div style="display: flex; flex-direction: column; gap: 4px; padding-top: 14px; border-top: 1px solid #3A3733"><span style="font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: 40px; line-height: 1">3 m</span><span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90">Altezza</span></div><div style="display: flex; flex-direction: column; gap: 4px; padding-top: 14px; border-top: 1px solid #3A3733"><span style="font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: 40px; line-height: 1">363</span><span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90">Pezzi</span></div><div style="display: flex; flex-direction: column; gap: 4px; padding-top: 14px; border-top: 1px solid #3A3733"><span style="font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: 40px; line-height: 1">2.867</span><span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90">Ore di stampa</span></div></div>
+<a class="btn" href="minotauro.html" style="align-self: flex-start; text-decoration: none; padding: 16px 26px; background: #F5F2ED; color: #1A1A1A; font-weight: 600; font-size: 16px">Scopri di più →</a>
 </div>
 </article>
 </div>
 </section>
 
 <section style="max-width: 1360px; margin: 0 auto; padding: 104px 24px">
-<h2 style="margin: 0 0 48px; font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: clamp(40px, 5vw, 64px); line-height: 0.95; text-transform: uppercase; max-width: 900px">Un'unica filiera, dall'idea all'oggetto</h2>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0; border-top: 2px solid #191816">
+<h2 style="margin: 0 0 48px; font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: clamp(40px, 5vw, 64px); line-height: 0.95; max-width: 900px">Un'unica filiera, dall'idea all'oggetto</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0; border-top: 2px solid #1A1A1A">
 <div style="padding: 28px 24px 28px 0; display: flex; flex-direction: column; gap: 12px">
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 56px; line-height: 1; color: #B3261E">01</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: 56px; line-height: 1; color: #D97757">01</span>
 <span style="font-weight: 600; font-size: 20px">Progetto</span>
-<span style="font-size: 16px; line-height: 1.55; color: #4A463F">Partiamo dall'esigenza e disegniamo il concept, con vincoli e budget chiari fin da subito.</span>
+<span style="font-size: 16px; line-height: 1.55; color: #3D4451">Partiamo dall'esigenza e disegniamo il concept, con vincoli e budget chiari fin da subito.</span>
 </div>
 <div style="padding: 28px 24px 28px 0; display: flex; flex-direction: column; gap: 12px">
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 56px; line-height: 1; color: #B3261E">02</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: 56px; line-height: 1; color: #D97757">02</span>
 <span style="font-weight: 600; font-size: 20px">Modellazione 3D</span>
-<span style="font-size: 16px; line-height: 1.55; color: #4A463F">Ogni pezzo è modellato per essere stampato davvero, non solo per fare bella figura in un render.</span>
+<span style="font-size: 16px; line-height: 1.55; color: #3D4451">Ogni pezzo è modellato per essere stampato davvero, non solo per fare bella figura in un render.</span>
 </div>
 <div style="padding: 28px 24px 28px 0; display: flex; flex-direction: column; gap: 12px">
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 56px; line-height: 1; color: #B3261E">03</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: 56px; line-height: 1; color: #D97757">03</span>
 <span style="font-weight: 600; font-size: 20px">Materiali e processo</span>
-<span style="font-size: 16px; line-height: 1.55; color: #4A463F">Scegliamo materiale e parametri di stampa in base a resistenza, finitura e uso reale.</span>
+<span style="font-size: 16px; line-height: 1.55; color: #3D4451">Scegliamo materiale e parametri di stampa in base a resistenza, finitura e uso reale.</span>
 </div>
 <div style="padding: 28px 24px 28px 0; display: flex; flex-direction: column; gap: 12px">
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 56px; line-height: 1; color: #B3261E">04</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: 56px; line-height: 1; color: #D97757">04</span>
 <span style="font-weight: 600; font-size: 20px">Stampa e finitura</span>
-<span style="font-size: 16px; line-height: 1.55; color: #4A463F">Produzione con controllo qualità su ogni pezzo, fino alla consegna.</span>
+<span style="font-size: 16px; line-height: 1.55; color: #3D4451">Produzione con controllo qualità su ogni pezzo, fino alla consegna.</span>
 </div>
 </div>
 </section>
 
-<section id="studio" style="background: #F7F5F1; border-top: 1px solid #CFC7BA; border-bottom: 1px solid #CFC7BA">
+<section id="studio" style="background: #EDE7DF; border-top: 1px solid #DCD3C4; border-bottom: 1px solid #DCD3C4">
 <div style="max-width: 1360px; margin: 0 auto; padding: 104px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 56px; align-items: start">
 <div style="display: flex; flex-direction: column; gap: 24px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5C574F">Lo studio</div>
-<h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: clamp(40px, 5vw, 64px); line-height: 0.95; text-transform: uppercase">Design e ingegneria, insieme</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #2E2B27">STUDIO38D nasce a Roma nel 2026 dall'incontro tra progettazione e scienza dei materiali. Usiamo la stampa 3D per quello che sa fare meglio: forme impossibili con altri processi, personalizzazione vera, produzione su misura senza stampi.</p>
-<p style="margin: 0; font-size: 15px; color: #5C574F; font-family: 'IBM Plex Mono', monospace">Via Alberto Ascari 38D · 00142 Roma</p>
+<div style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5B6270">Lo studio</div>
+<h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: clamp(40px, 5vw, 64px); line-height: 0.95">Design e ingegneria, insieme</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #262626">STUDIO38D nasce a Roma nel 2026 dall'incontro tra progettazione e scienza dei materiali. Usiamo la stampa 3D per quello che sa fare meglio: forme impossibili con altri processi, personalizzazione vera, produzione su misura senza stampi.</p>
+<p style="margin: 0; font-size: 15px; color: #5B6270; font-family: 'Inter Tight', sans-serif; font-weight: 600">Via Alberto Ascari 38D · 00142 Roma</p>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px">
 <div style="display: flex; flex-direction: column; gap: 10px">
 <div class="ph" style="aspect-ratio: 3 / 4; width: 100%">[Ritratto Michele]</div>
 <span style="font-weight: 600; font-size: 18px">Michele Pascucci</span>
-<span style="font-size: 15px; line-height: 1.5; color: #4A463F">Ingegnere edile · Progettazione e design</span>
+<span style="font-size: 15px; line-height: 1.5; color: #3D4451">Ingegnere edile · Progettazione e design</span>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px">
 <div class="ph" style="aspect-ratio: 3 / 4; width: 100%">[Ritratto Simone]</div>
 <span style="font-weight: 600; font-size: 18px">Simone Mataloni</span>
-<span style="font-size: 15px; line-height: 1.5; color: #4A463F">Ingegnere chimico · Materiali e processi di stampa</span>
+<span style="font-size: 15px; line-height: 1.5; color: #3D4451">Ingegnere chimico · Materiali e processi di stampa</span>
 </div>
 </div>
 </div>
 </section>
 
-<section style="background: #B3261E; color: #FFFFFF">
+<section style="background: #D97757; color: #1A1A1A">
 <div style="max-width: 1360px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 32px">
-<h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 70%; font-weight: 800; font-size: clamp(44px, 6vw, 88px); line-height: 0.9; text-transform: uppercase; max-width: 820px">Hai un'idea? Trasformiamola in un oggetto.</h2>
+<h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: clamp(44px, 6vw, 88px); line-height: 0.9; max-width: 820px">Hai un'idea? Trasformiamola in un oggetto.</h2>
 <div style="display: flex; flex-direction: column; gap: 14px; align-items: flex-start">
-<a href="contatti.html" style="text-decoration: none; padding: 18px 30px; background: #FFFFFF; color: #191816; font-weight: 600; font-size: 17px">Richiedi un preventivo</a>
-<a href="mailto:info@studio38d.com" style="color: #FFFFFF; font-size: 16px; padding: 6px 0">info@studio38d.com</a>
+<a class="btn" href="contatti.html" style="text-decoration: none; padding: 18px 30px; background: #1A1A1A; color: #F5F2ED; font-weight: 600; font-size: 17px">Richiedi un preventivo</a>
+<a href="mailto:info@studio38d.com" style="color: #1A1A1A; font-size: 16px; padding: 6px 0">info@studio38d.com</a>
 </div>
 </div>
 </section>
 
-<footer style="background: #191816; color: #D9D3C9">
+<footer style="background: #1A1A1A; color: #D9D3C9">
 <div style="max-width: 1360px; margin: 0 auto; padding: 64px 24px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; font-size: 15px; line-height: 1.7">
 <div style="display: flex; flex-direction: column; gap: 10px">
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 28px; color: #EEEAE3">STUDIO38D</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: 28px; color: #F5F2ED">STUDIO38D</span>
 <span>Built, not rendered.</span>
 </div>
 <div style="display: flex; flex-direction: column">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90; margin-bottom: 8px">Esplora</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90; margin-bottom: 8px">Esplora</span>
 <a href="collezioni.html" style="color: #D9D3C9; text-decoration: none">Collezioni</a>
 <a href="su-misura.html" style="color: #D9D3C9; text-decoration: none">Su misura</a>
 <a href="event-gift.html" style="color: #D9D3C9; text-decoration: none">Event Gift</a>
@@ -216,19 +227,19 @@ a{color:#191816}a:hover{color:#B3261E}
 <a href="contatti.html" style="color: #D9D3C9; text-decoration: none">Contatti</a>
 </div>
 <div style="display: flex; flex-direction: column">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90; margin-bottom: 8px">Contatti</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90; margin-bottom: 8px">Contatti</span>
 <a href="mailto:info@studio38d.com" style="color: #D9D3C9; text-decoration: none">info@studio38d.com</a>
 <span>+39 349 099 9488</span>
 <span>+39 331 739 3775</span>
 <a href="https://www.instagram.com/studio38d" style="color: #D9D3C9; text-decoration: none">Instagram @studio38d</a>
 </div>
 <div style="display: flex; flex-direction: column">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90; margin-bottom: 8px">Sede</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90; margin-bottom: 8px">Sede</span>
 <span>Via Alberto Ascari 38D</span>
 <span>00142 Roma (RM)</span>
 </div>
 </div>
-<div style="max-width: 1360px; margin: 0 auto; padding: 20px 24px 32px; border-top: 1px solid #3A3733; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #A29B90">STUDIO38D S.r.l. · P.IVA [da inserire] · Privacy · Cookie</div>
+<div style="max-width: 1360px; margin: 0 auto; padding: 20px 24px 32px; border-top: 1px solid #3A3733; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 12px; color: #A29B90">STUDIO38D S.r.l. · P.IVA [da inserire] · Privacy · Cookie</div>
 </footer>
 
 </div>

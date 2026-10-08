@@ -10,27 +10,38 @@
 <meta property="og:type" content="website">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
 <style>
-body{margin:0;background:#EEEAE3}
-a{color:#191816}a:hover{color:#B3261E}
-.ph{background:repeating-linear-gradient(0deg,#D8D0C3 0 2px,#E5DFD5 2px 7px);display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#454039;text-transform:uppercase;letter-spacing:.06em;text-align:center;padding:16px;box-sizing:border-box}
-input,select,textarea{font:inherit;color:#191816}
+body{margin:0;background:#F5F2ED}
+a{color:#1A1A1A}a:hover{color:#D97757}
+.ph{background:repeating-linear-gradient(0deg,#E2D9CB 0 2px,#EDE7DF 2px 7px);display:flex;align-items:center;justify-content:center;font-family:'Inter Tight',sans-serif;font-weight:600;font-size:12px;color:#5B6270;text-transform:uppercase;letter-spacing:.06em;text-align:center;padding:16px;box-sizing:border-box}
+input,select,textarea{font:inherit;color:#1A1A1A}
+
+/* === Tema Argilla === */
+body{font-family:'Inter Tight',sans-serif}
+img,.ph,.pimg{border-radius:20px}
+.pimg,.ph{overflow:hidden}
+.btn{border-radius:999px!important}
+.card,.panel{border-radius:24px!important;overflow:hidden}
+.tile{border-radius:18px!important}
+input,select,textarea{border-radius:12px!important}
+.opt{border-radius:14px!important}
+.chip{border-radius:999px!important}
 </style>
 </head>
 <body>
-<div style="font-family: 'IBM Plex Sans', sans-serif; color: #191816; background: #EEEAE3; width: 100%">
+<div style="font-family: 'Inter Tight', sans-serif; color: #1A1A1A; background: #F5F2ED; width: 100%">
 
-<header style="border-bottom: 1px solid #CFC7BA">
+<header style="border-bottom: 1px solid #DCD3C4">
 <nav style="max-width: 1360px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px">
-<a href="index.html" style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 28px; letter-spacing: 0.01em; text-decoration: none; color: #191816">STUDIO<span style="color: #B3261E">38D</span></a>
+<a href="index.html" style="font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: 28px; text-decoration: none; color: #1A1A1A">STUDIO<span style="color: #D97757">38D</span></a>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-size: 15px; font-weight: 500">
 <a href="collezioni.html" style="text-decoration: none; padding: 10px 0">Collezioni</a>
 <a href="event-gift.html" style="text-decoration: none; padding: 10px 0">Event Gift</a>
 <a href="su-misura.html" style="text-decoration: none; padding: 10px 0">Su misura</a>
 <a href="su-misura.html" style="text-decoration: none; padding: 10px 0">Rivenditori</a>
 <a href="index.html" style="text-decoration: none; padding: 10px 0">Lo studio</a>
-<a href="contatti.html" style="text-decoration: none; padding: 12px 20px; background: #B3261E; color: #FFFFFF">Richiedi un preventivo</a>
+<a class="btn" href="contatti.html" style="text-decoration: none; padding: 12px 20px; background: #D97757; color: #1A1A1A">Richiedi un preventivo</a>
 </div>
 </nav>
 </header>
@@ -39,62 +50,62 @@ input,select,textarea{font:inherit;color:#191816}
 
 <div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 32px">
 <div style="display: flex; flex-direction: column; gap: 20px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5C574F">Rispondiamo entro 24 ore lavorative</div>
-<h1 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 70%; font-weight: 800; font-size: clamp(56px, 8vw, 120px); line-height: 0.86; text-transform: uppercase">Parliamone</h1>
-<p style="margin: 0; font-size: 19px; line-height: 1.55; max-width: 620px; color: #2E2B27">Un progetto su misura, un ordine per la tua azienda, un prodotto delle collezioni o il catalogo rivenditori: scrivici e ti rispondiamo con una proposta concreta.</p>
+<div style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5B6270">Rispondiamo entro 24 ore lavorative</div>
+<h1 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: clamp(56px, 8vw, 120px); line-height: 0.95">Parliamone</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.55; max-width: 620px; color: #262626">Un progetto su misura, un ordine per la tua azienda, un prodotto delle collezioni o il catalogo rivenditori: scrivici e ti rispondiamo con una proposta concreta.</p>
 </div>
 
-<form name="preventivo" method="POST" action="/grazie.html" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" style="display: flex; flex-direction: column; gap: 22px; background: #F7F5F1; border: 1px solid #CFC7BA; padding: 32px">
+<form name="preventivo" method="POST" action="/grazie.html" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" style="display: flex; flex-direction: column; gap: 22px; background: #EDE7DF; border: 1px solid #DCD3C4; padding: 32px">
 <p style="display:none"><label>Non compilare: <input name="bot-field"></label></p>
 <fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 12px">
 <legend style="font-weight: 600; font-size: 16px; margin-bottom: 12px; padding: 0">Di cosa hai bisogno?</legend>
 <div style="display: flex; flex-wrap: wrap; gap: 10px">
-<label style="display: flex; align-items: center; gap: 8px; padding: 12px 16px; border: 1px solid #191816; background: #191816; color: #EEEAE3; font-size: 15px; cursor: pointer"><input type="radio" name="tipo" value="Progetto su misura" checked style="accent-color: #EEEAE3"> Progetto su misura</label>
-<label style="display: flex; align-items: center; gap: 8px; padding: 12px 16px; border: 1px solid #A39B8E; font-size: 15px; cursor: pointer"><input type="radio" name="tipo" value="Event Gift / bomboniere"> Event Gift / bomboniere</label>
-<label style="display: flex; align-items: center; gap: 8px; padding: 12px 16px; border: 1px solid #A39B8E; font-size: 15px; cursor: pointer"><input type="radio" name="tipo" value="Regali e gadget aziendali"> Regali e gadget aziendali</label>
-<label style="display: flex; align-items: center; gap: 8px; padding: 12px 16px; border: 1px solid #A39B8E; font-size: 15px; cursor: pointer"><input type="radio" name="tipo" value="Prodotti delle collezioni"> Prodotti delle collezioni</label>
-<label style="display: flex; align-items: center; gap: 8px; padding: 12px 16px; border: 1px solid #A39B8E; font-size: 15px; cursor: pointer"><input type="radio" name="tipo" value="Mappa in rilievo"> Mappa in rilievo</label>
-<label style="display: flex; align-items: center; gap: 8px; padding: 12px 16px; border: 1px solid #A39B8E; font-size: 15px; cursor: pointer"><input type="radio" name="tipo" value="Sono un rivenditore"> Sono un rivenditore</label>
+<label style="display: flex; align-items: center; gap: 8px; padding: 12px 16px; border: 1px solid #1A1A1A; background: #1A1A1A; color: #F5F2ED; font-size: 15px; cursor: pointer"><input type="radio" name="tipo" value="Progetto su misura" checked style="accent-color: #D97757"> Progetto su misura</label>
+<label style="display: flex; align-items: center; gap: 8px; padding: 12px 16px; border: 1px solid #C7BCAB; font-size: 15px; cursor: pointer"><input type="radio" name="tipo" value="Event Gift / bomboniere"> Event Gift / bomboniere</label>
+<label style="display: flex; align-items: center; gap: 8px; padding: 12px 16px; border: 1px solid #C7BCAB; font-size: 15px; cursor: pointer"><input type="radio" name="tipo" value="Regali e gadget aziendali"> Regali e gadget aziendali</label>
+<label style="display: flex; align-items: center; gap: 8px; padding: 12px 16px; border: 1px solid #C7BCAB; font-size: 15px; cursor: pointer"><input type="radio" name="tipo" value="Prodotti delle collezioni"> Prodotti delle collezioni</label>
+<label style="display: flex; align-items: center; gap: 8px; padding: 12px 16px; border: 1px solid #C7BCAB; font-size: 15px; cursor: pointer"><input type="radio" name="tipo" value="Mappa in rilievo"> Mappa in rilievo</label>
+<label style="display: flex; align-items: center; gap: 8px; padding: 12px 16px; border: 1px solid #C7BCAB; font-size: 15px; cursor: pointer"><input type="radio" name="tipo" value="Sono un rivenditore"> Sono un rivenditore</label>
 </div>
 </fieldset>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px">
-<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Nome e cognome<input type="text" name="nome" required placeholder="Mario Rossi" style="padding: 14px; border: 1px solid #A39B8E; background: #FFFFFF; font-size: 16px"></label>
-<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Azienda o negozio (facoltativo)<input type="text" name="azienda" style="padding: 14px; border: 1px solid #A39B8E; background: #FFFFFF; font-size: 16px"></label>
-<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Email<input type="email" name="email" required placeholder="nome@email.it" style="padding: 14px; border: 1px solid #A39B8E; background: #FFFFFF; font-size: 16px"></label>
-<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Telefono (facoltativo)<input type="tel" name="telefono" style="padding: 14px; border: 1px solid #A39B8E; background: #FFFFFF; font-size: 16px"></label>
-<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Quantità indicativa<select name="quantita" style="padding: 14px; border: 1px solid #A39B8E; background: #FFFFFF; font-size: 16px"><option>Pezzo unico</option><option>2–20 pezzi</option><option>20–100 pezzi</option><option>Oltre 100 pezzi</option></select></label>
-<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Entro quando ti serve?<input type="date" name="scadenza" style="padding: 13px 14px; border: 1px solid #A39B8E; background: #FFFFFF; font-size: 16px"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Nome e cognome<input type="text" name="nome" required placeholder="Mario Rossi" style="padding: 14px; border: 1px solid #C7BCAB; background: #FFFFFF; font-size: 16px"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Azienda o negozio (facoltativo)<input type="text" name="azienda" style="padding: 14px; border: 1px solid #C7BCAB; background: #FFFFFF; font-size: 16px"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Email<input type="email" name="email" required placeholder="nome@email.it" style="padding: 14px; border: 1px solid #C7BCAB; background: #FFFFFF; font-size: 16px"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Telefono (facoltativo)<input type="tel" name="telefono" style="padding: 14px; border: 1px solid #C7BCAB; background: #FFFFFF; font-size: 16px"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Quantità indicativa<select name="quantita" style="padding: 14px; border: 1px solid #C7BCAB; background: #FFFFFF; font-size: 16px"><option>Pezzo unico</option><option>2–20 pezzi</option><option>20–100 pezzi</option><option>Oltre 100 pezzi</option></select></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Entro quando ti serve?<input type="date" name="scadenza" style="padding: 13px 14px; border: 1px solid #C7BCAB; background: #FFFFFF; font-size: 16px"></label>
 </div>
 
-<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Raccontaci il progetto<textarea name="messaggio" required rows="5" placeholder="Cosa vuoi realizzare, dimensioni indicative, colori, a chi è destinato…" style="padding: 14px; border: 1px solid #A39B8E; background: #FFFFFF; font-size: 16px; resize: vertical"></textarea></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Raccontaci il progetto<textarea name="messaggio" required rows="5" placeholder="Cosa vuoi realizzare, dimensioni indicative, colori, a chi è destinato…" style="padding: 14px; border: 1px solid #C7BCAB; background: #FFFFFF; font-size: 16px; resize: vertical"></textarea></label>
 
-<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Allegati: foto, schizzi, file 3D o logo (facoltativo)<input type="file" name="allegati" multiple style="padding: 14px; border: 1px dashed #A39B8E; background: #FFFFFF; font-size: 15px"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Allegati: foto, schizzi, file 3D o logo (facoltativo)<input type="file" name="allegati" multiple style="padding: 14px; border: 1px dashed #C7BCAB; background: #FFFFFF; font-size: 15px"></label>
 
-<label style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px; line-height: 1.5; color: #4A463F"><input type="checkbox" name="privacy" required style="margin-top: 3px; width: 18px; height: 18px"> Ho letto l'informativa privacy e acconsento al trattamento dei dati per ricevere una risposta.</label>
+<label style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px; line-height: 1.5; color: #3D4451"><input type="checkbox" name="privacy" required style="margin-top: 3px; width: 18px; height: 18px"> Ho letto l'informativa privacy e acconsento al trattamento dei dati per ricevere una risposta.</label>
 
-<button type="submit" style="align-self: flex-start; padding: 18px 32px; background: #B3261E; color: #FFFFFF; border: 0; font: inherit; font-weight: 600; font-size: 17px; cursor: pointer">Invia la richiesta</button>
+<button class="btn" type="submit" style="align-self: flex-start; padding: 18px 32px; background: #D97757; color: #1A1A1A; border: 0; font: inherit; font-weight: 600; font-size: 17px; cursor: pointer">Invia la richiesta</button>
 </form>
 </div>
 
 <aside style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
-<div style="background: #191816; color: #EEEAE3; padding: 32px; display: flex; flex-direction: column; gap: 22px">
-<h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 700; font-size: 30px; text-transform: uppercase; line-height: 1">Contatti diretti</h2>
+<div class="panel" style="background: #1A1A1A; color: #F5F2ED; padding: 32px; display: flex; flex-direction: column; gap: 22px">
+<h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 800; letter-spacing: -0.03em; font-size: 30px; line-height: 1">Contatti diretti</h2>
 <div style="display: flex; flex-direction: column; gap: 4px">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90">Email</span>
-<a href="mailto:info@studio38d.com" style="color: #EEEAE3; font-size: 18px; padding: 4px 0">info@studio38d.com</a>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90">Email</span>
+<a href="mailto:info@studio38d.com" style="color: #F5F2ED; font-size: 18px; padding: 4px 0">info@studio38d.com</a>
 </div>
 <div style="display: flex; flex-direction: column; gap: 4px">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90">Telefono e WhatsApp</span>
-<a href="tel:+393490999488" style="color: #EEEAE3; font-size: 18px; padding: 4px 0">+39 349 099 9488</a>
-<a href="tel:+393317393775" style="color: #EEEAE3; font-size: 18px; padding: 4px 0">+39 331 739 3775</a>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90">Telefono e WhatsApp</span>
+<a href="tel:+393490999488" style="color: #F5F2ED; font-size: 18px; padding: 4px 0">+39 349 099 9488</a>
+<a href="tel:+393317393775" style="color: #F5F2ED; font-size: 18px; padding: 4px 0">+39 331 739 3775</a>
 </div>
 <div style="display: flex; flex-direction: column; gap: 4px">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90">Instagram</span>
-<a href="https://www.instagram.com/studio38d" style="color: #EEEAE3; font-size: 18px; padding: 4px 0">@studio38d</a>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90">Instagram</span>
+<a href="https://www.instagram.com/studio38d" style="color: #F5F2ED; font-size: 18px; padding: 4px 0">@studio38d</a>
 </div>
 <div style="display: flex; flex-direction: column; gap: 4px">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90">Sede</span>
+<span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90">Sede</span>
 <span style="font-size: 18px; line-height: 1.5">Via Alberto Ascari 38D<br>00142 Roma (RM)</span>
 <span style="font-size: 14px; color: #BDB6AA">Visite su appuntamento</span>
 </div>
@@ -104,9 +115,9 @@ input,select,textarea{font:inherit;color:#191816}
 
 </section>
 
-<footer style="background: #191816; color: #D9D3C9">
-<div style="max-width: 1360px; margin: 0 auto; padding: 40px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 32px; font-size: 14px; font-family: 'IBM Plex Mono', monospace">
-<span style="color: #EEEAE3">STUDIO38D · Built, not rendered.</span>
+<footer style="background: #1A1A1A; color: #D9D3C9">
+<div style="max-width: 1360px; margin: 0 auto; padding: 40px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 32px; font-size: 14px; font-family: 'Inter Tight', sans-serif; font-weight: 600">
+<span style="color: #F5F2ED">STUDIO38D · Built, not rendered.</span>
 <span>STUDIO38D S.r.l. · P.IVA [da inserire]</span>
 </div>
 </footer>
