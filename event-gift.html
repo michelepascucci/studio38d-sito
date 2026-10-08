@@ -23,7 +23,8 @@ a{color:#1A1A1A}a:hover{color:#D97757}
 .riga{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid #3A3733}
 .riga span:last-child{font-family:'Inter Tight',sans-serif;font-weight:600;white-space:nowrap}
 .nfc-step{opacity:.38;transition:opacity .3s}.nfc-step.on{opacity:1}
-#nfc .lb{transition:opacity .3s}
+@media (max-width:600px){#nfc .lb{font-size:10px!important;padding:4px 9px!important}}
+#nfc .lb{font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#F5F2ED;background:#1A1A1A;border:0;padding:6px 12px;border-radius:999px;white-space:nowrap;opacity:0;transition:opacity .3s}
 @media (prefers-reduced-motion: reduce){#nfc-track{height:auto!important}#nfc-stage{position:static!important;height:auto!important;padding-top:24px!important;padding-bottom:24px!important}}
 
 /* === Tema Argilla === */
@@ -108,67 +109,43 @@ input,select,textarea{border-radius:12px!important}
 </div>
 </div>
 </section>
-<section id="nfc" style="background: #1A1A1A; color: #F5F2ED">
+<section id="nfc" style="background: #EDE7DF; color: #1A1A1A">
 <div style="max-width: 1360px; margin: 0 auto; padding: 104px 24px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px 56px; align-items: end">
-<div style="display: flex; flex-direction: column; gap: 18px"><div style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #BDB6AA">Approfondimento</div><h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.9">Cos'è un tag NFC</h2></div>
-<p style="margin: 0; font-size: 17px; line-height: 1.65; color: #D9D3C9">NFC sta per <em>Near Field Communication</em>: la stessa tecnologia dei pagamenti contactless. È un chip sottilissimo, senza batteria, che si attiva solo quando gli si avvicina uno smartphone. Nessuna app da scaricare: funziona con iPhone e Android.</p>
+<div style="display: flex; flex-direction: column; gap: 18px"><div style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5B6270">Approfondimento</div><h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.9">Cos'è un tag NFC</h2></div>
+<p style="margin: 0; font-size: 17px; line-height: 1.65; color: #3D4451">NFC sta per <em>Near Field Communication</em>: la stessa tecnologia dei pagamenti contactless. È un chip sottilissimo, senza batteria, che si attiva solo quando gli si avvicina uno smartphone. Nessuna app da scaricare: funziona con iPhone e Android.</p>
 </div>
 <div id="nfc-track" style="position: relative; height: 260vh">
 <div id="nfc-stage" style="position: sticky; top: 0; height: 100vh; max-width: 1360px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 24px 56px">
 <ol style="flex: 1 1 360px; margin: 0; padding: 0; list-style: none; max-width: 520px">
-<li class="nfc-step" data-i="0" style="display: flex; gap: 16px; padding: 18px 0; border-top: 1px solid #3A3733">
+<li class="nfc-step" data-i="0" style="display: flex; gap: 16px; padding: 18px 0; border-top: 1px solid #DCD3C4">
 <span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 13px; color: #A9512F; padding-top: 3px">01</span>
-<span style="display: flex; flex-direction: column; gap: 6px"><strong style="font-size: 18px; font-weight: 600">Il vaso</strong><span style="font-size: 15px; line-height: 1.55; color: #BDB6AA">Il vasetto della linea che avete scelto, nel colore della vostra cerimonia.</span></span>
+<span style="display: flex; flex-direction: column; gap: 6px"><strong style="font-size: 18px; font-weight: 600">Il vaso</strong><span style="font-size: 15px; line-height: 1.55; color: #5B6270">Il vasetto della linea che avete scelto, nel colore della vostra cerimonia.</span></span>
 </li>
-<li class="nfc-step" data-i="1" style="display: flex; gap: 16px; padding: 18px 0; border-top: 1px solid #3A3733">
+<li class="nfc-step" data-i="1" style="display: flex; gap: 16px; padding: 18px 0; border-top: 1px solid #DCD3C4">
 <span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 13px; color: #A9512F; padding-top: 3px">02</span>
-<span style="display: flex; flex-direction: column; gap: 6px"><strong style="font-size: 18px; font-weight: 600">Il tag NFC</strong><span style="font-size: 15px; line-height: 1.55; color: #BDB6AA">Nascosto in una sede ricavata nel fondo, invisibile a occhio nudo. Lo programmiamo con il link che preferite.</span></span>
+<span style="display: flex; flex-direction: column; gap: 6px"><strong style="font-size: 18px; font-weight: 600">Il tag NFC</strong><span style="font-size: 15px; line-height: 1.55; color: #5B6270">Nascosto in una sede ricavata nel fondo, invisibile a occhio nudo. Lo programmiamo con il link che preferite.</span></span>
 </li>
-<li class="nfc-step" data-i="2" style="display: flex; gap: 16px; padding: 18px 0; border-top: 1px solid #3A3733">
+<li class="nfc-step" data-i="2" style="display: flex; gap: 16px; padding: 18px 0; border-top: 1px solid #DCD3C4">
 <span style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 13px; color: #A9512F; padding-top: 3px">03</span>
-<span style="display: flex; flex-direction: column; gap: 6px"><strong style="font-size: 18px; font-weight: 600">Il fondo con dedica</strong><span style="font-size: 15px; line-height: 1.55; color: #BDB6AA">Chiude il tag e porta la personalizzazione: nomi, data, una frase o un simbolo.</span></span>
+<span style="display: flex; flex-direction: column; gap: 6px"><strong style="font-size: 18px; font-weight: 600">Il fondo con dedica</strong><span style="font-size: 15px; line-height: 1.55; color: #5B6270">Chiude il tag e porta la personalizzazione: nomi, data, una frase o un simbolo.</span></span>
 </li>
 </ol>
-<div style="flex: 1 1 360px; min-width: 0; display: flex; justify-content: center"><svg id="nfc-svg" viewBox="0 -110 440 680" role="img" aria-label="Esploso del vasetto: vaso, tag NFC e fondo con dedica" style="width: 100%; max-height: 78vh; display: block; overflow: visible">
-<defs>
-<linearGradient id="gv" x1="0" x2="1"><stop offset="0" stop-color="#7E8A2B"/><stop offset=".5" stop-color="#B6C04A"/><stop offset="1" stop-color="#6E7824"/></linearGradient>
-<linearGradient id="gb" x1="0" x2="1"><stop offset="0" stop-color="#7E8A2B"/><stop offset=".5" stop-color="#A7B142"/><stop offset="1" stop-color="#6E7824"/></linearGradient>
-</defs>
-<g id="p-base" style="transition: none">
-<path d="M90 390 L90 412 A130 26 0 0 0 350 412 L350 390 Z" fill="#6E7824"/>
-<ellipse cx="220" cy="390" rx="130" ry="26" fill="url(#gb)"/>
-<ellipse cx="220" cy="390" rx="104" ry="19" fill="none" stroke="#5D6620" stroke-width="1.5" stroke-dasharray="3 4"/>
-<text x="220" y="386" text-anchor="middle" font-family="'Inter Tight', sans-serif" font-weight="700" font-size="17" fill="#3F4513" letter-spacing="2" transform="matrix(1 0 0 .55 0 175)">GIULIA &amp; MARCO</text>
-<text x="220" y="404" text-anchor="middle" font-family="'Inter Tight', sans-serif" font-size="11" fill="#3F4513" letter-spacing="2" transform="matrix(1 0 0 .55 0 183)">12 · 06 · 2027</text>
-</g>
-<g id="p-tag">
-<ellipse cx="220" cy="378" rx="54" ry="11" fill="#1F1E1C"/>
-<ellipse cx="220" cy="375" rx="54" ry="11" fill="#2B2A27" stroke="#4A4640"/>
-<ellipse cx="220" cy="375" rx="42" ry="8" fill="none" stroke="#C9894B" stroke-width="1.6"/>
-<ellipse cx="220" cy="375" rx="34" ry="6.4" fill="none" stroke="#C9894B" stroke-width="1.6"/>
-<ellipse cx="220" cy="375" rx="26" ry="4.8" fill="none" stroke="#C9894B" stroke-width="1.6"/>
-<rect x="213" y="372" width="14" height="6" rx="1" fill="#8F8A80"/>
-</g>
-<g id="p-vaso">
-<path d="M150 78 L290 78 L350 360 L90 360 Z" fill="url(#gv)"/>
-<g stroke="#5D6620" stroke-width="1.4" opacity=".75"><line x1="162.5" y1="78" x2="117.5" y2="360"/><line x1="175.0" y1="78" x2="145.0" y2="360"/><line x1="187.5" y1="78" x2="172.5" y2="360"/><line x1="200.0" y1="78" x2="200.0" y2="360"/><line x1="212.5" y1="78" x2="227.5" y2="360"/><line x1="225.0" y1="78" x2="255.0" y2="360"/><line x1="237.5" y1="78" x2="282.5" y2="360"/></g>
-<path d="M150 78 L163 66 L175 78 L188 66 L200 78 L213 66 L225 78 L238 66 L250 78 L263 66 L275 78 L290 66 L290 78 Z" fill="#9AA43A"/>
-<ellipse cx="220" cy="360" rx="130" ry="26" fill="#6E7824"/>
-</g>
-<g id="lbl" font-family="'Inter Tight', sans-serif" font-size="13" fill="#F5F2ED" letter-spacing="1">
-<g class="lb" data-k="0"><line x1="330" y1="200" x2="400" y2="200" stroke="#BDB6AA"/><text x="404" y="204">VASO</text></g>
-<g class="lb" data-k="1"><line x1="276" y1="375" x2="400" y2="375" stroke="#BDB6AA"/><text x="404" y="379">TAG NFC</text></g>
-<g class="lb" data-k="2"><line x1="352" y1="400" x2="400" y2="400" stroke="#BDB6AA"/><text x="404" y="404">FONDO</text></g>
-</g>
-</svg></div>
+<div style="flex: 1 1 360px; min-width: 0; display: flex; justify-content: center"><div id="nfc-model" role="img" aria-label="Esploso del vasetto: vaso, tag NFC e fondo con dedica" style="position: relative; width: 100%; max-width: 680px; aspect-ratio: 760 / 600">
+<img id="p-vaso" src="img/nfc/vaso.webp" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 0; will-change: transform">
+<img id="p-tag" src="img/nfc/tag.webp" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 0; will-change: transform">
+<img id="p-base" src="img/nfc/fondo.webp" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 0; will-change: transform">
+<span class="lb" style="position: absolute; left: 58%; top: 12%">Vaso</span>
+<span class="lb" style="position: absolute; left: 76%; top: 66%">Tag NFC</span>
+<span class="lb" style="position: absolute; left: 64%; top: 101%">Fondo con dedica</span>
+</div></div>
 </div>
 </div>
 <div style="max-width: 1360px; margin: 0 auto; padding: 24px 24px 104px">
-<h3 style="margin: 0 0 28px; font-family: 'Inter Tight', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #BDB6AA">Cosa può aprire il vostro tag</h3>
+<h3 style="margin: 0 0 28px; font-family: 'Inter Tight', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #5B6270">Cosa può aprire il vostro tag</h3>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px">
-<div class="tile" style="border: 1px solid #3A3733; padding: 22px; display: flex; flex-direction: column; gap: 8px"><strong style="font-size: 17px; font-weight: 600">Il sito dell'evento</strong><span style="font-size: 14px; line-height: 1.5; color: #BDB6AA">Programma, indicazioni, lista nozze.</span></div><div class="tile" style="border: 1px solid #3A3733; padding: 22px; display: flex; flex-direction: column; gap: 8px"><strong style="font-size: 17px; font-weight: 600">Le foto e i video</strong><span style="font-size: 14px; line-height: 1.5; color: #BDB6AA">L'album del fotografo, anche quando arriva settimane dopo.</span></div><div class="tile" style="border: 1px solid #3A3733; padding: 22px; display: flex; flex-direction: column; gap: 8px"><strong style="font-size: 17px; font-weight: 600">Una playlist</strong><span style="font-size: 14px; line-height: 1.5; color: #BDB6AA">Le canzoni della festa, da riascoltare.</span></div><div class="tile" style="border: 1px solid #3A3733; padding: 22px; display: flex; flex-direction: column; gap: 8px"><strong style="font-size: 17px; font-weight: 600">Un messaggio</strong><span style="font-size: 14px; line-height: 1.5; color: #BDB6AA">Un video di ringraziamento o una lettera per gli ospiti.</span></div>
+<div class="tile" style="border: 1px solid #DCD3C4; padding: 22px; display: flex; flex-direction: column; gap: 8px"><strong style="font-size: 17px; font-weight: 600">Il sito dell'evento</strong><span style="font-size: 14px; line-height: 1.5; color: #5B6270">Programma, indicazioni, lista nozze.</span></div><div class="tile" style="border: 1px solid #DCD3C4; padding: 22px; display: flex; flex-direction: column; gap: 8px"><strong style="font-size: 17px; font-weight: 600">Le foto e i video</strong><span style="font-size: 14px; line-height: 1.5; color: #5B6270">L'album del fotografo, anche quando arriva settimane dopo.</span></div><div class="tile" style="border: 1px solid #DCD3C4; padding: 22px; display: flex; flex-direction: column; gap: 8px"><strong style="font-size: 17px; font-weight: 600">Una playlist</strong><span style="font-size: 14px; line-height: 1.5; color: #5B6270">Le canzoni della festa, da riascoltare.</span></div><div class="tile" style="border: 1px solid #DCD3C4; padding: 22px; display: flex; flex-direction: column; gap: 8px"><strong style="font-size: 17px; font-weight: 600">Un messaggio</strong><span style="font-size: 14px; line-height: 1.5; color: #5B6270">Un video di ringraziamento o una lettera per gli ospiti.</span></div>
 </div>
-<p style="margin: 28px 0 0; font-size: 15px; line-height: 1.6; color: #A29B90; max-width: 760px">Basta avvicinare lo smartphone al fondo del vasetto: il contenuto si apre in un attimo, oggi e tra dieci anni.</p>
+<p style="margin: 28px 0 0; font-size: 15px; line-height: 1.6; color: #5B6270; max-width: 760px">Basta avvicinare lo smartphone al fondo del vasetto: il contenuto si apre in un attimo, oggi e tra dieci anni.</p>
 </div>
 </section>
 <section id="linee" style="background: #1A1A1A; color: #F5F2ED">
@@ -342,21 +319,27 @@ var LISTINO = {
 <script>
 (function(){
   var track = document.getElementById('nfc-track'); if (!track) return;
+  var box = document.getElementById('nfc-model');
   var vaso = document.getElementById('p-vaso'), tag = document.getElementById('p-tag'), base = document.getElementById('p-base');
   var steps = document.querySelectorAll('.nfc-step'), lbs = document.querySelectorAll('#nfc .lb');
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var ease = function(x){ return x < .5 ? 2*x*x : 1 - Math.pow(-2*x + 2, 2) / 2; };
+  /* Spostamenti in pixel dell'immagine originale (larga 760 px).
+     [montato, esploso]: a inizio scroll i pezzi sono chiusi nel fondo del vaso, a fine scroll sono separati. */
+  var M = { vaso: [[0, 0], [-30, -24]], tag: [[-105, -80], [26, 20]], base: [[-190, -150], [48, 38]] };
+  function mv(el, m, e){
+    var s = box.clientWidth / 760;
+    var x = (m[0][0] + (m[1][0] - m[0][0]) * e) * s, y = (m[0][1] + (m[1][1] - m[0][1]) * e) * s;
+    el.style.transform = 'translate(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px)';
+  }
   function draw(p){
-    var e = ease(Math.min(1, Math.max(0, p)));
-    vaso.setAttribute('transform', 'translate(0 ' + (-150 * e) + ')');
-    tag.setAttribute('transform', 'translate(0 ' + (-20 * e) + ')');
-    base.setAttribute('transform', 'translate(0 ' + (120 * e) + ')');
-    var lb = [[0, -150], [1, -20], [2, 120]];
-    lbs.forEach(function(g, i){ g.setAttribute('transform', 'translate(0 ' + (lb[i][1] * e) + ')'); g.style.opacity = Math.min(1, Math.max(0, (p - .55 - i * .08) * 5)); });
+    p = Math.min(1, Math.max(0, p)); var e = ease(p);
+    mv(vaso, M.vaso, e); mv(tag, M.tag, e); mv(base, M.base, e);
+    lbs.forEach(function(g, i){ g.style.opacity = Math.min(1, Math.max(0, (p - .55 - i * .08) * 5)); });
     var a = p < .25 ? -1 : p < .5 ? 0 : p < .75 ? 1 : 2;
     steps.forEach(function(s, i){ s.classList.toggle('on', a === -1 || i <= a); });
   }
-  if (reduce) { draw(1); return; }
+  if (reduce) { draw(1); window.addEventListener('resize', function(){ draw(1); }); return; }
   var ticking = false;
   function onScroll(){
     if (ticking) return; ticking = true;
