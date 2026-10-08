@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>STUDIO38D – Bomboniere per matrimoni ed eventi</title>
-<meta name="description" content="Bomboniere stampate in 3D da STUDIO38D: vasetti personalizzati che arredano i tavoli del matrimonio e diventano il regalo per gli invitati, con tag NFC integrato.">
-<meta property="og:title" content="STUDIO38D – Bomboniere">
-<meta property="og:description" content="Bomboniere stampate in 3D da STUDIO38D: vasetti personalizzati che arredano i tavoli del matrimonio e diventano il regalo per gli invitati, con tag NFC integrato.">
+<title>Event Gift – Bomboniere per matrimoni e cerimonie | STUDIO38D</title>
+<meta name="description" content="Event Gift di STUDIO38D: vasetti stampati in 3D che arredano i tavoli di matrimoni, battesimi, comunioni, lauree ed eventi e diventano la bomboniera per gli ospiti, personalizzati e con tag NFC.">
+<meta property="og:title" content="STUDIO38D – Event Gift">
+<meta property="og:description" content="Event Gift di STUDIO38D: vasetti stampati in 3D che arredano i tavoli di matrimoni, battesimi, comunioni, lauree ed eventi e diventano la bomboniera per gli ospiti, personalizzati e con tag NFC.">
 <meta property="og:type" content="website">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +22,9 @@ a{color:#191816}a:hover{color:#B3261E}
 .opt:has(input:checked){border-color:#191816;box-shadow:inset 0 0 0 1px #191816}
 .riga{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid #3A3733}
 .riga span:last-child{font-family:'IBM Plex Mono',monospace;white-space:nowrap}
+.nfc-step{opacity:.38;transition:opacity .3s}.nfc-step.on{opacity:1}
+#nfc .lb{transition:opacity .3s}
+@media (prefers-reduced-motion: reduce){#nfc-track{height:auto!important}#nfc-stage{position:static!important;height:auto!important;padding-top:24px!important;padding-bottom:24px!important}}
 </style>
 </head>
 <body>
@@ -31,7 +34,7 @@ a{color:#191816}a:hover{color:#B3261E}
 <a href="index.html" style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 28px; letter-spacing: 0.01em; text-decoration: none; color: #191816">STUDIO<span style="color: #B3261E">38D</span></a>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-size: 15px; font-weight: 500">
 <a href="collezioni.html" style="text-decoration: none; padding: 10px 0">Collezioni</a>
-<a href="bomboniere.html" style="text-decoration: none; padding: 10px 0; border-bottom: 2px solid #B3261E">Bomboniere</a>
+<a href="event-gift.html" style="text-decoration: none; padding: 10px 0">Event Gift</a>
 <a href="su-misura.html" style="text-decoration: none; padding: 10px 0">Su misura</a>
 <a href="su-misura.html" style="text-decoration: none; padding: 10px 0">Rivenditori</a>
 <a href="index.html" style="text-decoration: none; padding: 10px 0">Lo studio</a>
@@ -41,15 +44,16 @@ a{color:#191816}a:hover{color:#B3261E}
 </header>
 <section style="max-width: 1360px; margin: 0 auto; padding: 72px 24px 64px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr)); gap: 48px; align-items: center">
 <div style="display: flex; flex-direction: column; gap: 26px">
-<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5C574F">Matrimoni · Battesimi · Eventi</div>
-<h1 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 70%; font-weight: 800; text-transform: uppercase; font-size: clamp(52px, 7vw, 112px); line-height: 0.88">Bomboniere che arredano la festa</h1>
-<p style="margin: 0; font-size: 20px; line-height: 1.55; max-width: 580px; color: #2E2B27">Vasetti stampati in 3D che durante l'evento decorano i tavoli e, a fine giornata, diventano il regalo per i vostri invitati. Estetica, funzione ed esperienza in un unico oggetto, completamente personalizzato.</p>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5C574F">Matrimoni · Battesimi · Comunioni · Lauree · Eventi</div>
+<h1 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 70%; font-weight: 800; text-transform: uppercase; font-size: clamp(72px, 11vw, 168px); line-height: 0.84">Event Gift</h1>
+<p style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 85%; font-weight: 600; font-size: clamp(24px, 2.4vw, 32px); line-height: 1.2">Bomboniere che arredano la festa.</p>
+<p style="margin: 0; font-size: 19px; line-height: 1.6; max-width: 580px; color: #2E2B27">Vasetti stampati in 3D che durante la cerimonia decorano i tavoli e, a fine giornata, diventano il regalo per i vostri ospiti. Estetica, funzione ed esperienza in un unico oggetto, completamente personalizzato.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
-<a href="contatti.html" style="text-decoration: none; padding: 16px 26px; background: #B3261E; color: #FFFFFF; font-weight: 600; font-size: 16px">Richiedi un preventivo gratuito</a>
+<a href="contatti.html?tipo=Event%20Gift%20%2F%20bomboniere" style="text-decoration: none; padding: 16px 26px; background: #B3261E; color: #FFFFFF; font-weight: 600; font-size: 16px">Richiedi un preventivo gratuito</a>
 <a href="#preventivo" style="text-decoration: none; padding: 15px 25px; border: 1px solid #191816; font-weight: 600; font-size: 16px">Calcola il preventivo</a>
 </div>
 </div>
-<img src="img/eventi/radial-tavolo-1.webp" alt="Vasetti Radial con fiori sulla tavola di un matrimonio" loading="lazy" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; object-position: center 40%">
+<img src="img/copertina.webp" alt="Vasi Origami di STUDIO38D in un interno" loading="lazy" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block">
 </section>
 <section style="background: #F7F5F1; border-top: 1px solid #CFC7BA; border-bottom: 1px solid #CFC7BA">
 <div style="max-width: 1360px; margin: 0 auto; padding: 96px 24px">
@@ -59,27 +63,27 @@ a{color:#191816}a:hover{color:#B3261E}
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 32px">
 <article style="display: flex; flex-direction: column; gap: 18px">
-<img src="img/eventi/sweep-tavolo-1.webp" alt="Vaso Sweep con fiore bianco su tavolo in legno" loading="lazy" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; object-position: center 35%">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B3261E">01 — Durante l'evento</span>
+<img src="img/sweep-1.webp" alt="Vasi della linea Sweep" loading="lazy" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; object-position: center 70%">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B3261E">01 — Durante la cerimonia</span>
 <h3 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 700; font-size: 32px; text-transform: uppercase; line-height: 1">Complemento d'arredo</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A463F">I vasetti si dispongono sui tavoli, allestiti con fiori o decorazioni, e contribuiscono allo stile e al concept della giornata.</p>
 </article>
 <article style="display: flex; flex-direction: column; gap: 18px">
-<img src="img/eventi/radial-tavolo-2.webp" alt="Vasetti Radial colorati sulla tavola apparecchiata" loading="lazy" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; object-position: center 30%">
+<img src="img/quadrifoglio-1.webp" alt="Vasi della linea Quadrifoglio" loading="lazy" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; object-position: center 60%">
 <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B3261E">02 — A fine festa</span>
 <h3 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 700; font-size: 32px; text-transform: uppercase; line-height: 1">La bomboniera</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A463F">Ogni invitato porta a casa il suo vasetto: un ricordo che resta in casa, non in un cassetto.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A463F">Ogni ospite porta a casa il suo vasetto: un ricordo da usare tutti i giorni, non da chiudere in un cassetto.</p>
 </article>
 </div>
 </div>
 </section>
-<section style="max-width: 1360px; margin: 0 auto; padding: 104px 24px">
+<section style="max-width: 1360px; margin: 0 auto; padding: 104px 24px 64px">
 <div style="margin-bottom: 48px"><h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 70%; font-weight: 800; text-transform: uppercase; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.9">Completamente personalizzate</h2></div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 40px 32px">
 <div style="border-top: 2px solid #191816; padding-top: 24px; display: flex; flex-direction: column; gap: 12px">
 <span style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 48px; line-height: 1; color: #B3261E">01</span>
 <h3 style="margin: 0; font-weight: 600; font-size: 21px">Il vostro segno</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A463F">Iniziali degli sposi, data, simboli, testi o grafiche dedicate, integrati nel vasetto.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A463F">Nomi o iniziali, data della cerimonia, simboli, testi o grafiche dedicate, integrati nel vasetto.</p>
 </div>
 <div style="border-top: 2px solid #191816; padding-top: 24px; display: flex; flex-direction: column; gap: 12px">
 <span style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 48px; line-height: 1; color: #B3261E">02</span>
@@ -89,14 +93,77 @@ a{color:#191816}a:hover{color:#B3261E}
 <div style="border-top: 2px solid #191816; padding-top: 24px; display: flex; flex-direction: column; gap: 12px">
 <span style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 48px; line-height: 1; color: #B3261E">03</span>
 <h3 style="margin: 0; font-weight: 600; font-size: 21px">Tag NFC integrato</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A463F">Avvicinando lo smartphone, l'invitato apre il sito del matrimonio, il drive con il book fotografico o qualsiasi contenuto digitale. Per rivivere la giornata anche a distanza di anni.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A463F">Un piccolo chip nascosto nel fondo collega il vasetto ai contenuti digitali dell'evento. Ve lo raccontiamo qui sotto.</p>
 </div>
+</div>
+</section>
+<section id="nfc" style="background: #191816; color: #EEEAE3">
+<div style="max-width: 1360px; margin: 0 auto; padding: 104px 24px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px 56px; align-items: end">
+<div style="display: flex; flex-direction: column; gap: 18px"><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #BDB6AA">Approfondimento</div><h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 70%; font-weight: 800; text-transform: uppercase; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.9">Cos'è un tag NFC</h2></div>
+<p style="margin: 0; font-size: 17px; line-height: 1.65; color: #D9D3C9">NFC sta per <em>Near Field Communication</em>: la stessa tecnologia dei pagamenti contactless. È un chip sottilissimo, senza batteria, che si attiva solo quando gli si avvicina uno smartphone. Nessuna app da scaricare: funziona con iPhone e Android.</p>
+</div>
+<div id="nfc-track" style="position: relative; height: 260vh">
+<div id="nfc-stage" style="position: sticky; top: 0; height: 100vh; max-width: 1360px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 24px 56px">
+<ol style="flex: 1 1 360px; margin: 0; padding: 0; list-style: none; max-width: 520px">
+<li class="nfc-step" data-i="0" style="display: flex; gap: 16px; padding: 18px 0; border-top: 1px solid #3A3733">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B3261E; padding-top: 3px">01</span>
+<span style="display: flex; flex-direction: column; gap: 6px"><strong style="font-size: 18px; font-weight: 600">Il vaso</strong><span style="font-size: 15px; line-height: 1.55; color: #BDB6AA">Il vasetto della linea che avete scelto, nel colore della vostra cerimonia.</span></span>
+</li>
+<li class="nfc-step" data-i="1" style="display: flex; gap: 16px; padding: 18px 0; border-top: 1px solid #3A3733">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B3261E; padding-top: 3px">02</span>
+<span style="display: flex; flex-direction: column; gap: 6px"><strong style="font-size: 18px; font-weight: 600">Il tag NFC</strong><span style="font-size: 15px; line-height: 1.55; color: #BDB6AA">Nascosto in una sede ricavata nel fondo, invisibile a occhio nudo. Lo programmiamo con il link che preferite.</span></span>
+</li>
+<li class="nfc-step" data-i="2" style="display: flex; gap: 16px; padding: 18px 0; border-top: 1px solid #3A3733">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B3261E; padding-top: 3px">03</span>
+<span style="display: flex; flex-direction: column; gap: 6px"><strong style="font-size: 18px; font-weight: 600">Il fondo con dedica</strong><span style="font-size: 15px; line-height: 1.55; color: #BDB6AA">Chiude il tag e porta la personalizzazione: nomi, data, una frase o un simbolo.</span></span>
+</li>
+</ol>
+<div style="flex: 1 1 360px; min-width: 0; display: flex; justify-content: center"><svg id="nfc-svg" viewBox="0 -110 440 680" role="img" aria-label="Esploso del vasetto: vaso, tag NFC e fondo con dedica" style="width: 100%; max-height: 78vh; display: block; overflow: visible">
+<defs>
+<linearGradient id="gv" x1="0" x2="1"><stop offset="0" stop-color="#7E8A2B"/><stop offset=".5" stop-color="#B6C04A"/><stop offset="1" stop-color="#6E7824"/></linearGradient>
+<linearGradient id="gb" x1="0" x2="1"><stop offset="0" stop-color="#7E8A2B"/><stop offset=".5" stop-color="#A7B142"/><stop offset="1" stop-color="#6E7824"/></linearGradient>
+</defs>
+<g id="p-base" style="transition: none">
+<path d="M90 390 L90 412 A130 26 0 0 0 350 412 L350 390 Z" fill="#6E7824"/>
+<ellipse cx="220" cy="390" rx="130" ry="26" fill="url(#gb)"/>
+<ellipse cx="220" cy="390" rx="104" ry="19" fill="none" stroke="#5D6620" stroke-width="1.5" stroke-dasharray="3 4"/>
+<text x="220" y="386" text-anchor="middle" font-family="'Archivo', sans-serif" font-weight="700" font-size="17" fill="#3F4513" letter-spacing="2" transform="matrix(1 0 0 .55 0 175)">GIULIA &amp; MARCO</text>
+<text x="220" y="404" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#3F4513" letter-spacing="2" transform="matrix(1 0 0 .55 0 183)">12 · 06 · 2027</text>
+</g>
+<g id="p-tag">
+<ellipse cx="220" cy="378" rx="54" ry="11" fill="#1F1E1C"/>
+<ellipse cx="220" cy="375" rx="54" ry="11" fill="#2B2A27" stroke="#4A4640"/>
+<ellipse cx="220" cy="375" rx="42" ry="8" fill="none" stroke="#C9894B" stroke-width="1.6"/>
+<ellipse cx="220" cy="375" rx="34" ry="6.4" fill="none" stroke="#C9894B" stroke-width="1.6"/>
+<ellipse cx="220" cy="375" rx="26" ry="4.8" fill="none" stroke="#C9894B" stroke-width="1.6"/>
+<rect x="213" y="372" width="14" height="6" rx="1" fill="#8F8A80"/>
+</g>
+<g id="p-vaso">
+<path d="M150 78 L290 78 L350 360 L90 360 Z" fill="url(#gv)"/>
+<g stroke="#5D6620" stroke-width="1.4" opacity=".75"><line x1="162.5" y1="78" x2="117.5" y2="360"/><line x1="175.0" y1="78" x2="145.0" y2="360"/><line x1="187.5" y1="78" x2="172.5" y2="360"/><line x1="200.0" y1="78" x2="200.0" y2="360"/><line x1="212.5" y1="78" x2="227.5" y2="360"/><line x1="225.0" y1="78" x2="255.0" y2="360"/><line x1="237.5" y1="78" x2="282.5" y2="360"/></g>
+<path d="M150 78 L163 66 L175 78 L188 66 L200 78 L213 66 L225 78 L238 66 L250 78 L263 66 L275 78 L290 66 L290 78 Z" fill="#9AA43A"/>
+<ellipse cx="220" cy="360" rx="130" ry="26" fill="#6E7824"/>
+</g>
+<g id="lbl" font-family="'IBM Plex Mono', monospace" font-size="13" fill="#EEEAE3" letter-spacing="1">
+<g class="lb" data-k="0"><line x1="330" y1="200" x2="400" y2="200" stroke="#BDB6AA"/><text x="404" y="204">VASO</text></g>
+<g class="lb" data-k="1"><line x1="276" y1="375" x2="400" y2="375" stroke="#BDB6AA"/><text x="404" y="379">TAG NFC</text></g>
+<g class="lb" data-k="2"><line x1="352" y1="400" x2="400" y2="400" stroke="#BDB6AA"/><text x="404" y="404">FONDO</text></g>
+</g>
+</svg></div>
+</div>
+</div>
+<div style="max-width: 1360px; margin: 0 auto; padding: 24px 24px 104px">
+<h3 style="margin: 0 0 28px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #BDB6AA">Cosa può aprire il vostro tag</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px">
+<div style="border: 1px solid #3A3733; padding: 22px; display: flex; flex-direction: column; gap: 8px"><strong style="font-size: 17px; font-weight: 600">Il sito dell'evento</strong><span style="font-size: 14px; line-height: 1.5; color: #BDB6AA">Programma, indicazioni, lista nozze.</span></div><div style="border: 1px solid #3A3733; padding: 22px; display: flex; flex-direction: column; gap: 8px"><strong style="font-size: 17px; font-weight: 600">Le foto e i video</strong><span style="font-size: 14px; line-height: 1.5; color: #BDB6AA">L'album del fotografo, anche quando arriva settimane dopo.</span></div><div style="border: 1px solid #3A3733; padding: 22px; display: flex; flex-direction: column; gap: 8px"><strong style="font-size: 17px; font-weight: 600">Una playlist</strong><span style="font-size: 14px; line-height: 1.5; color: #BDB6AA">Le canzoni della festa, da riascoltare.</span></div><div style="border: 1px solid #3A3733; padding: 22px; display: flex; flex-direction: column; gap: 8px"><strong style="font-size: 17px; font-weight: 600">Un messaggio</strong><span style="font-size: 14px; line-height: 1.5; color: #BDB6AA">Un video di ringraziamento o una lettera per gli ospiti.</span></div>
+</div>
+<p style="margin: 28px 0 0; font-size: 15px; line-height: 1.6; color: #A29B90; max-width: 760px">Basta avvicinare lo smartphone al fondo del vasetto: il contenuto si apre in un attimo, oggi e tra dieci anni.</p>
 </div>
 </section>
 <section id="linee" style="background: #191816; color: #EEEAE3">
 <div style="max-width: 1360px; margin: 0 auto; padding: 104px 24px">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px 56px; align-items: end; margin-bottom: 48px">
-<div style="display: flex; flex-direction: column; gap: 18px"><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #BDB6AA">Le linee</div><h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 70%; font-weight: 800; text-transform: uppercase; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.9">Scegliete il vostro vaso</h2></div>
+<div style="display: flex; flex-direction: column; gap: 18px"><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #BDB6AA">Le linee di vasi</div><h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 70%; font-weight: 800; text-transform: uppercase; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.9">Scegliete il vostro vaso</h2></div>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #D9D3C9">Quattro linee, ognuna in più misure: potete scegliere un solo modello o mescolare le altezze sui tavoli. Colori e personalizzazione li decidiamo insieme.</p>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 40px 24px">
@@ -132,7 +199,7 @@ a{color:#191816}a:hover{color:#B3261E}
 <form id="calc" style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start" onsubmit="return false">
 <div style="flex: 999 1 560px; min-width: 0; background: #F7F5F1; border: 1px solid #CFC7BA; padding: 32px; display: flex; flex-direction: column; gap: 26px">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px">
-<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Linea<select id="c-linea" style="padding: 14px; border: 1px solid #A39B8E; background: #FFFFFF; font: inherit; font-size: 16px; color: #191816"><option value="origami">Origami</option><option value="sweep">Sweep</option><option value="quadrifoglio">Quadrifoglio</option><option value="olympia">Olympia</option></select></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Linea di vasi<select id="c-linea" style="padding: 14px; border: 1px solid #A39B8E; background: #FFFFFF; font: inherit; font-size: 16px; color: #191816"><option value="origami">Origami</option><option value="sweep">Sweep</option><option value="quadrifoglio">Quadrifoglio</option><option value="olympia">Olympia</option></select></label>
 <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Misura<select id="c-misura" style="padding: 14px; border: 1px solid #A39B8E; background: #FFFFFF; font: inherit; font-size: 16px; color: #191816"></select></label>
 <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Numero di pezzi<input id="c-qta" type="number" min="1" step="1" value="80" inputmode="numeric" style="padding: 14px; border: 1px solid #A39B8E; background: #FFFFFF; font: inherit; font-size: 16px; color: #191816"></label>
 <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Data dell'evento (facoltativa)<input id="c-data" type="date" style="padding: 14px; border: 1px solid #A39B8E; background: #FFFFFF; font: inherit; font-size: 16px; color: #191816"></label>
@@ -145,7 +212,7 @@ a{color:#191816}a:hover{color:#B3261E}
 <label class="opt"><input type="radio" name="pers" value="grafica"><span><strong style="display: block; font-size: 15px">Grafica dedicata</strong><span style="font-size: 13px; color: #5C574F">Simbolo o disegno su misura</span></span></label>
 </div>
 </fieldset>
-<label class="opt" style="align-self: flex-start"><input type="checkbox" id="c-nfc"><span><strong style="display: block; font-size: 15px">Tag NFC integrato</strong><span style="font-size: 13px; color: #5C574F">Apre il sito del matrimonio o il book fotografico avvicinando il telefono</span></span></label>
+<label class="opt" style="align-self: flex-start"><input type="checkbox" id="c-nfc"><span><strong style="display: block; font-size: 15px">Tag NFC integrato</strong><span style="font-size: 13px; color: #5C574F">Apre il sito dell'evento o l'album fotografico avvicinando il telefono</span></span></label>
 </div>
 <aside aria-live="polite" style="flex: 1 1 320px; min-width: 0; background: #191816; color: #EEEAE3; padding: 32px; display: flex; flex-direction: column; gap: 18px">
 <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #A29B90">La vostra stima</span>
@@ -160,13 +227,13 @@ a{color:#191816}a:hover{color:#B3261E}
 <section style="max-width: 1360px; margin: 0 auto; padding: 104px 24px">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px 56px; align-items: end; margin-bottom: 40px">
 <h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 70%; font-weight: 800; text-transform: uppercase; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.9">Come funziona</h2>
-<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #4A463F">Vi consigliamo di contattarci almeno 6 settimane prima dell'evento, per avere il tempo di progettare, provare e produrre con calma.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #4A463F">Vi consigliamo di contattarci almeno [X settimane] prima dell'evento, per avere il tempo di progettare, provare e produrre con calma.</p>
 </div>
 <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0 24px">
 <li style="padding: 24px 20px 24px 0; display: flex; flex-direction: column; gap: 10px; border-top: 2px solid #191816">
 <span style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 48px; line-height: 1; color: #B3261E">01</span>
-<span style="font-weight: 600; font-size: 18px">Raccontateci la festa</span>
-<span style="font-size: 15px; line-height: 1.55; color: #4A463F">Data, numero di invitati, stile e colori dell’allestimento.</span>
+<span style="font-weight: 600; font-size: 18px">Raccontateci l'evento</span>
+<span style="font-size: 15px; line-height: 1.55; color: #4A463F">Tipo di cerimonia, data, numero di ospiti, stile e colori.</span>
 </li>
 <li style="padding: 24px 20px 24px 0; display: flex; flex-direction: column; gap: 10px; border-top: 2px solid #191816">
 <span style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 48px; line-height: 1; color: #B3261E">02</span>
@@ -181,14 +248,14 @@ a{color:#191816}a:hover{color:#B3261E}
 <li style="padding: 24px 20px 24px 0; display: flex; flex-direction: column; gap: 10px; border-top: 2px solid #191816">
 <span style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 48px; line-height: 1; color: #B3261E">04</span>
 <span style="font-weight: 600; font-size: 18px">Produzione e consegna</span>
-<span style="font-size: 15px; line-height: 1.55; color: #4A463F">Produciamo tutti i pezzi nel nostro laboratorio e li consegniamo in tempo per l’evento.</span>
+<span style="font-size: 15px; line-height: 1.55; color: #4A463F">Produciamo tutti i pezzi, li controlliamo uno a uno e li consegniamo in tempo per l’evento.</span>
 </li>
 </ol>
-<p style="margin: 48px 0 0; font-size: 16px; line-height: 1.6; color: #4A463F; max-width: 760px">Non solo matrimoni: realizziamo bomboniere e regali per battesimi, comunioni, lauree ed eventi aziendali. <a href="su-misura.html" style="font-weight: 600">Scopri i regali per aziende →</a></p>
+<p style="margin: 48px 0 0; font-size: 16px; line-height: 1.6; color: #4A463F; max-width: 760px">Matrimoni, battesimi, comunioni, cresime, lauree, anniversari ed eventi aziendali: ogni occasione ha il suo Event Gift. Per regali aziendali e gadget con logo <a href="su-misura.html" style="font-weight: 600">scopri le soluzioni per le aziende →</a></p>
 </section>
 <section style="background: #B3261E; color: #FFFFFF">
 <div style="max-width: 1360px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 32px">
-<h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 70%; font-weight: 800; font-size: clamp(44px, 6vw, 88px); line-height: 0.9; text-transform: uppercase; max-width: 820px">Il vostro giorno, stampato strato dopo strato.</h2>
+<h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 70%; font-weight: 800; font-size: clamp(44px, 6vw, 88px); line-height: 0.9; text-transform: uppercase; max-width: 820px">La vostra festa, stampata strato dopo strato.</h2>
 <a href="contatti.html" style="text-decoration: none; padding: 18px 30px; background: #FFFFFF; color: #191816; font-weight: 600; font-size: 17px">Preventivo gratuito</a>
 </div>
 </section>
@@ -252,13 +319,42 @@ var LISTINO = {
     if (d) { var gg = (new Date(d) - new Date()) / 864e5; if (gg < LISTINO.settimaneMinime * 7) avv.push('Mancano meno di ' + LISTINO.settimaneMinime + ' settimane all\'evento: scriveteci subito per verificare i tempi.'); }
     $('r-avviso').textContent = avv.join(' '); $('r-avviso').hidden = !avv.length;
     var mis = m === 'mix' ? 'mix di misure' : 'modello ' + (+m + 1) + ' (' + cm(v[+m].h) + ' cm)';
-    var msg = 'Bomboniere: linea ' + nomi[l] + ', ' + mis + ', ' + q + ' pezzi. Personalizzazione: ' + persNomi[pers] + '. Tag NFC: ' + (nfc ? 'sì' : 'no') + '.' + (d ? ' Data evento: ' + d.split('-').reverse().join('/') + '.' : '') + ' Stima dal sito: ' + eur(Math.round(tot * 100) / 100) + '.';
-    $('r-invia').href = 'contatti.html?tipo=' + encodeURIComponent('Bomboniere per un evento') + '&messaggio=' + encodeURIComponent(msg) + (d ? '&scadenza=' + d : '');
+    var msg = 'Event Gift: linea ' + nomi[l] + ', ' + mis + ', ' + q + ' pezzi. Personalizzazione: ' + persNomi[pers] + '. Tag NFC: ' + (nfc ? 'sì' : 'no') + '.' + (d ? ' Data evento: ' + d.split('-').reverse().join('/') + '.' : '') + ' Stima dal sito: ' + eur(Math.round(tot * 100) / 100) + '.';
+    $('r-invia').href = 'contatti.html?tipo=' + encodeURIComponent('Event Gift / bomboniere') + '&messaggio=' + encodeURIComponent(msg) + (d ? '&scadenza=' + d : '');
   }
   $('c-linea').addEventListener('change', function(){ misure(); calcola(); });
   $('calc').addEventListener('input', calcola);
   $('calc').addEventListener('change', calcola);
   misure(); calcola();
+})();
+</script>
+<script>
+(function(){
+  var track = document.getElementById('nfc-track'); if (!track) return;
+  var vaso = document.getElementById('p-vaso'), tag = document.getElementById('p-tag'), base = document.getElementById('p-base');
+  var steps = document.querySelectorAll('.nfc-step'), lbs = document.querySelectorAll('#nfc .lb');
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var ease = function(x){ return x < .5 ? 2*x*x : 1 - Math.pow(-2*x + 2, 2) / 2; };
+  function draw(p){
+    var e = ease(Math.min(1, Math.max(0, p)));
+    vaso.setAttribute('transform', 'translate(0 ' + (-150 * e) + ')');
+    tag.setAttribute('transform', 'translate(0 ' + (-20 * e) + ')');
+    base.setAttribute('transform', 'translate(0 ' + (120 * e) + ')');
+    var lb = [[0, -150], [1, -20], [2, 120]];
+    lbs.forEach(function(g, i){ g.setAttribute('transform', 'translate(0 ' + (lb[i][1] * e) + ')'); g.style.opacity = Math.min(1, Math.max(0, (p - .55 - i * .08) * 5)); });
+    var a = p < .25 ? -1 : p < .5 ? 0 : p < .75 ? 1 : 2;
+    steps.forEach(function(s, i){ s.classList.toggle('on', a === -1 || i <= a); });
+  }
+  if (reduce) { draw(1); return; }
+  var ticking = false;
+  function onScroll(){
+    if (ticking) return; ticking = true;
+    requestAnimationFrame(function(){
+      var r = track.getBoundingClientRect(), span = track.offsetHeight - window.innerHeight;
+      draw(span > 0 ? -r.top / span : 1); ticking = false;
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true }); window.addEventListener('resize', onScroll); onScroll();
 })();
 </script>
 </body>
