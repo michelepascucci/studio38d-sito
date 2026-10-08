@@ -23,14 +23,21 @@ a{color:#1A1A1A}a:hover{color:#D97757}
 .riga{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid #3A3733}
 .riga span:last-child{font-family:'Inter Tight',sans-serif;font-weight:600;white-space:nowrap}
 
-.xp{position:relative;max-width:1200px;aspect-ratio:1200/720}
-.xp-img{position:absolute;left:25%;top:5.6%;width:46.7%}
+.xp-wrap{container-type:inline-size}
+.xp{position:relative;max-width:1200px;aspect-ratio:1750/1110}
+.xp-img{position:absolute;left:0;top:0;width:72%}
 .xp-ar{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-.xp-bd{position:absolute;width:28px;height:28px;margin:-14px 0 0 -14px;border-radius:50%;background:#1A1A1A;color:#F5F2ED;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 3px #EDE7DF}
-.xp-box{position:absolute;width:23.3%;box-sizing:border-box;background:#F5F2ED;border-radius:18px;padding:18px 20px;box-shadow:0 1px 2px rgba(26,26,26,.06)}
-.xp-n{display:inline-flex;width:24px;height:24px;border-radius:50%;background:#D97757;color:#1A1A1A;font-size:12px;font-weight:700;align-items:center;justify-content:center;margin-bottom:8px}
-.xp .b1{left:0;top:20.5%;width:22.5%}.xp .b2{left:77.5%;top:41%;width:22.5%}.xp .b3{left:77.5%;top:71%;width:22.5%}
-@media (max-width:1040px){.xp{aspect-ratio:auto;display:flex;flex-direction:column;gap:12px}.xp-img{position:relative;left:auto;top:auto;width:100%;max-width:520px;margin:0 auto 8px}.xp-ar{display:none}.xp-box{position:static;width:auto}}
+.xp-dot,.xp-end{position:absolute;border-radius:50%;background:#1A1A1A;transform:translate(-50%,-50%)}
+.xp-dot{width:11px;height:11px;box-shadow:0 0 0 2.5px #F5F2ED}
+.xp-end{width:6px;height:6px}
+.xp-box{position:absolute;width:24%;box-sizing:border-box;background:#F5F2ED;border-radius:18px;padding:clamp(12px,1.4cqw,20px);box-shadow:0 1px 3px rgba(26,26,26,.07)}
+.xp-n{display:inline-flex;width:clamp(20px,1.9cqw,26px);height:clamp(20px,1.9cqw,26px);border-radius:50%;background:#D97757;color:#1A1A1A;font-size:clamp(11px,1cqw,13px);font-weight:700;align-items:center;justify-content:center;margin-bottom:clamp(4px,.6cqw,8px)}
+.xp-t{display:block;font-size:clamp(13px,1.45cqw,18px);font-weight:700;margin-bottom:4px}
+.xp-d{display:block;font-size:clamp(11px,1.15cqw,14.5px);line-height:1.45;color:#3D4451}
+.xp .b1{left:44%;bottom:78.8%;width:26%}
+.xp .b2{left:76%;top:45%}
+.xp .b3{left:76%;top:77%}
+@container (max-width:620px){.xp{aspect-ratio:auto;display:flex;flex-direction:column;gap:12px}.xp-img{position:relative;width:100%}.xp-ar,.xp-dot,.xp-end{display:none}.xp-box{position:static;width:auto!important}.xp-d{font-size:14px}.xp-t{font-size:17px}}
 /* === Tema Argilla === */
 body{font-family:'Inter Tight',sans-serif}
 img,.ph,.pimg{border-radius:20px}
@@ -118,21 +125,19 @@ input,select,textarea{border-radius:12px!important}
 <div style="display: flex; flex-direction: column; gap: 18px"><div style="font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5B6270">Approfondimento</div><h2 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.9">Cos'è un tag NFC</h2></div>
 <p style="margin: 0; font-size: 17px; line-height: 1.65; color: #3D4451">NFC sta per <em>Near Field Communication</em>: la stessa tecnologia dei pagamenti contactless. È un chip sottilissimo, senza batteria, che si attiva solo quando gli si avvicina uno smartphone. Nessuna app da scaricare: funziona con iPhone e Android.</p>
 </div>
-<div style="max-width: 1360px; margin: 0 auto; padding: 40px 24px 24px">
+<div class="xp-wrap" style="max-width: 1360px; margin: 0 auto; padding: 72px 24px 24px">
 <figure class="xp" style="margin: 0 auto">
-<div class="xp-img">
-<img src="img/nfc/esploso.webp" alt="Esploso del vasetto: vaso, tag NFC e fondo con dedica" width="1260" height="1110" loading="lazy" style="width: 100%; height: auto; display: block; border-radius: 0">
-</div>
-<svg class="xp-ar" viewBox="0 0 1200 720" aria-hidden="true" fill="none" stroke="#1A1A1A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1A1A1A" stroke="none"/></marker></defs>
-<polyline points="338,236 284,236" marker-end="url(#ah)"/>
-<polyline points="762,402 800,372 916,372" marker-end="url(#ah)"/>
-<polyline points="836,478 876,586 916,586" marker-end="url(#ah)"/>
-<g fill="#1A1A1A" stroke="#F5F2ED" stroke-width="2"><circle cx="338" cy="236" r="5.5"/><circle cx="762" cy="402" r="5.5"/><circle cx="836" cy="478" r="5.5"/></g>
+<div class="xp-img"><img src="img/nfc/esploso.webp" alt="Esploso del vasetto: vaso, tag NFC e fondo con dedica" width="1260" height="1110" loading="lazy" style="width: 100%; height: auto; display: block; border-radius: 0"></div>
+<svg class="xp-ar" viewBox="0 0 1750 1110" preserveAspectRatio="none" aria-hidden="true" fill="none" stroke="#1A1A1A" stroke-width="1.6" vector-effect="non-scaling-stroke">
+<polyline points="933,355 933,235" vector-effect="non-scaling-stroke"/>
+<polyline points="1050,827 1150,640 1330,640" vector-effect="non-scaling-stroke"/>
+<polyline points="1218,977 1330,977" vector-effect="non-scaling-stroke"/>
 </svg>
-<div class="xp-box b1"><span class="xp-n">1</span><strong style="display: block; font-size: 17px; font-weight: 700; margin: 2px 0 6px">Il vaso</strong><span style="font-size: 14px; line-height: 1.5; color: #3D4451">Il vasetto della linea che scegliete, stampato nel colore della vostra cerimonia.</span></div>
-<div class="xp-box b2"><span class="xp-n">2</span><strong style="display: block; font-size: 17px; font-weight: 700; margin: 2px 0 6px">Il tag NFC</strong><span style="font-size: 14px; line-height: 1.5; color: #3D4451">Un chip sottilissimo e senza batteria, alloggiato nel fondo. Lo programmiamo con il link che preferite.</span></div>
-<div class="xp-box b3"><span class="xp-n">3</span><strong style="display: block; font-size: 17px; font-weight: 700; margin: 2px 0 6px">Il fondo con dedica</strong><span style="font-size: 14px; line-height: 1.5; color: #3D4451">Chiude il tag e porta la personalizzazione: iniziali, data, una frase o un simbolo.</span></div>
+<span class="xp-dot" style="left: 53.3%; top: 32%"></span><span class="xp-dot" style="left: 60%; top: 74.5%"></span><span class="xp-dot" style="left: 69.6%; top: 88%"></span>
+<span class="xp-end" style="left: 53.3%; top: 21.2%"></span><span class="xp-end" style="left: 76%; top: 57.7%"></span><span class="xp-end" style="left: 76%; top: 88%"></span>
+<div class="xp-box b1"><span class="xp-n">1</span><strong class="xp-t">Il vaso</strong><span class="xp-d">Il vasetto della linea che scegliete, stampato nel colore della vostra cerimonia.</span></div>
+<div class="xp-box b2"><span class="xp-n">2</span><strong class="xp-t">Il tag NFC</strong><span class="xp-d">Un chip sottilissimo e senza batteria, alloggiato nel fondo. Lo programmiamo con il link che preferite.</span></div>
+<div class="xp-box b3"><span class="xp-n">3</span><strong class="xp-t">Il fondo con dedica</strong><span class="xp-d">Chiude il tag e porta la personalizzazione: iniziali, data, una frase o un simbolo.</span></div>
 </figure>
 </div>
 <div style="max-width: 1360px; margin: 0 auto; padding: 24px 24px 104px">
