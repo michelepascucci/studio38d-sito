@@ -37,3 +37,8 @@
   from = "/lampada-civilta.html"
   to = "/lampada-c2.html"
   status = 301
+
+[[redirects]]
+  from = "/portapenne-civilta.html"
+  to = "/portapenne-c2.html"
+  status = 301
