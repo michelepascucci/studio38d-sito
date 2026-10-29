@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>News – STUDIO38D</title>
+<meta name="description" content="News da STUDIO38D: il Minotauro alla Maker Faire Rome 2026, i premi ricevuti e gli articoli che parlano di noi.">
+<meta property="og:title" content="News – STUDIO38D">
+<meta property="og:description" content="News da STUDIO38D: il Minotauro alla Maker Faire Rome 2026, i premi ricevuti e gli articoli che parlano di noi.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/inter-tight-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Inter Tight';font-style:normal;font-display:swap;font-weight:100 900;src:url(fonts/inter-tight-latin-ext-wght-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Inter Tight';font-style:normal;font-display:swap;font-weight:100 900;src:url(fonts/inter-tight-latin-wght-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
+<style>
+body{margin:0;background:#F5F2ED}
+a{color:#1A1A1A}a:hover{color:#D97757}
+.ph{background:repeating-linear-gradient(0deg,#E2D9CB 0 2px,#EDE7DF 2px 7px);display:flex;align-items:center;justify-content:center;font-family:'Inter Tight',sans-serif;font-weight:600;font-size:12px;color:#5B6270;text-transform:uppercase;letter-spacing:.06em;text-align:center;padding:16px;box-sizing:border-box}
+.pcard{position:relative}.pcard .plink{position:absolute;inset:0;z-index:2;border-radius:20px}.pcard .plink:focus-visible{outline:2px solid #D97757;outline-offset:4px}.pcard .more{font-size:14px;font-weight:600;color:#A9512F}.pcard:hover h3{color:#D97757}
+.pcard .alt{opacity:0;transition:opacity .35s}.pcard:hover .alt{opacity:1}
+.pimg{position:relative;aspect-ratio:2/3;overflow:hidden;background:#EDE7DF;border-radius:20px}.pimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+
+.brand{display:inline-flex!important;align-items:center;gap:12px;font-family:"Inter Tight",sans-serif;font-weight:900;letter-spacing:-.045em;font-size:28px;line-height:1;text-decoration:none!important;color:#1A1A1A;white-space:nowrap}
+/* === Tema Argilla === */
+body{font-family:'Inter Tight',sans-serif}
+img,.ph,.pimg{border-radius:20px}
+.pimg,.ph{overflow:hidden}
+.btn{border-radius:999px!important}
+.card,.panel{border-radius:24px!important;overflow:hidden}
+.tile{border-radius:18px!important}
+input,select,textarea{border-radius:12px!important}
+.opt{border-radius:14px!important}
+.chip{border-radius:999px!important}
+
+.nw-list{display:flex;flex-direction:column;gap:0;border-top:2px solid #1A1A1A}
+.nw{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:40px;padding:40px 0;border-bottom:1px solid #DCD3C4;align-items:center;scroll-margin-top:24px}
+.nw img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;display:block}
+@media (max-width:820px){.nw{grid-template-columns:1fr;gap:20px;padding:28px 0}}
+.nw .k{font-weight:600;font-size:13px;color:#A9512F}
+.nw h2{margin:8px 0 0;font-family:'Inter Tight',sans-serif;font-weight:900;letter-spacing:-.045em;font-size:clamp(30px,3.6vw,48px);line-height:.98}
+.nw p{margin:14px 0 0;font-size:17px;line-height:1.6;color:#3D4451}
+.nw .badge{display:inline-flex;align-items:center;gap:10px;margin-top:16px;background:#1A1A1A;color:#F5F2ED;border-radius:999px;padding:6px 16px 6px 6px;font-weight:600;font-size:14px}
+.nw .badge img{width:34px;height:34px;aspect-ratio:auto;border-radius:0}
+.press{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:16px}
+.press a{display:flex;flex-direction:column;gap:10px;text-decoration:none;background:#EDE7DF;border:1px solid #DCD3C4;border-radius:18px;padding:22px}
+.press a:hover{border-color:#D97757}
+.press .t{font-weight:800;font-size:20px;letter-spacing:-.02em;line-height:1.15}
+.press .s{font-size:13px;font-weight:600;color:#5B6270}
+.todo{background:#FFE58A;color:#1A1A1A;border-radius:6px;padding:1px 6px;font-weight:600}
+
+/* nav-mobile */
+.site-head{position:relative;z-index:40;background:#F5F2ED}
+.nav-toggle{display:none;width:46px;height:46px;border:1px solid #DCD3C4;border-radius:999px;background:#F5F2ED;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0}
+.nav-toggle span{display:block;width:20px;height:2px;background:#1A1A1A;border-radius:2px;transition:transform .2s,opacity .2s}
+.site-head.open .nav-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.site-head.open .nav-toggle span:nth-child(2){opacity:0}
+.site-head.open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mf-badge{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:#F5F2ED!important;font-weight:600;font-size:14px;border:1px solid #3A3733;border-radius:999px;padding:6px 18px 6px 6px}
+.mf-badge:hover{border-color:#D97757}
+.mf-badge img{width:40px;height:40px;display:block;border-radius:0!important}
+@media (max-width:980px){
+  .site-head nav{flex-wrap:nowrap!important;padding:12px 16px!important}
+  .site-head .brand{font-size:22px!important;gap:10px!important}
+  .site-head .brand img{width:32px!important;height:32px!important}
+  .nav-toggle{display:inline-flex}
+  .nav-links{display:none!important;position:absolute;top:100%;left:0;right:0;background:#F5F2ED;flex-direction:column;align-items:stretch!important;gap:0!important;padding:4px 16px 20px;border-bottom:1px solid #DCD3C4;box-shadow:0 18px 30px -20px rgba(0,0,0,.35)}
+  .site-head.open .nav-links{display:flex!important}
+  .nav-links a{padding:15px 2px!important;border-bottom:1px solid #DCD3C4!important;font-size:18px}
+  .nav-links a[aria-current]{color:#A9512F}
+  .nav-links a.btn{margin-top:16px;text-align:center;border-bottom:0!important;padding:15px 20px!important}
+}
+@media (max-width:640px){
+  body section[style*="padding: 96px"],body section[style*="padding: 88px"],body section[style*="padding: 72px"]{padding-top:48px!important;padding-bottom:48px!important}
+  body div[style*="padding: 96px"],body div[style*="padding: 88px"]{padding-top:56px!important;padding-bottom:56px!important}
+  .btn{max-width:100%;white-space:normal;text-align:center}
+}
+/* /nav-mobile */
+</style>
+<script>
+/* Apri sempre la pagina dall'inizio (tranne quando il link punta a una sezione, es. #preventivo) */
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+(function(){ function top(){ if (!location.hash) window.scrollTo(0, 0); }
+  top(); window.addEventListener('load', top); window.addEventListener('pageshow', top); })();
+</script>
+</head>
+<body>
+<div style="font-family: Inter Tight, sans-serif; color: #1A1A1A; background: #F5F2ED; width: 100%">
+<header class="site-head" style="border-bottom: 1px solid #DCD3C4">
+<nav style="max-width: 1360px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px">
+<a href="index.html" class="brand" style="font-family: Inter Tight, sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: 28px; text-decoration: none; color: #1A1A1A; display: inline-flex; align-items: center; gap: 12px"><img src="img/logo.svg" alt="" width="40" height="40" style="width: 40px; height: 40px; display: block; border-radius: 0"><span>STUDIO<span style="color: #D97757">3</span>8<span style="color: #D97757">D</span></span></a>
+<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="menu-principale" aria-label="Apri il menu"><span></span><span></span><span></span></button>
+<div class="nav-links" id="menu-principale" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-size: 15px; font-weight: 500">
+<a href="collezioni.html" style="text-decoration: none; padding: 10px 0">Collezioni</a>
+<a href="event-gift.html" style="text-decoration: none; padding: 10px 0">Event Gift</a>
+<a href="su-misura.html" style="text-decoration: none; padding: 10px 0">Su misura</a>
+<a href="rivenditori.html" style="text-decoration: none; padding: 10px 0">Rivenditori</a>
+<a href="studio.html" style="text-decoration: none; padding: 10px 0">Lo studio</a>
+<a href="notizie.html" style="text-decoration: none; padding: 10px 0; border-bottom: 2px solid #D97757" aria-current="page">News</a>
+<a class="btn" href="contatti.html" style="text-decoration: none; padding: 12px 20px; background: #1A1A1A; color: #F5F2ED">Richiedi un preventivo</a>
+</div>
+</nav>
+</header>
+<main style="max-width: 1360px; margin: 0 auto; padding: 72px 24px 88px">
+<div style="font-weight: 600; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5B6270">Notizie e rassegna stampa</div>
+<h1 style="margin: 16px 0 0; font-family: Inter Tight, sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: clamp(64px, 10vw, 144px); line-height: 0.95">News</h1>
+<p style="margin: 20px 0 56px; font-size: 19px; line-height: 1.55; max-width: 680px; color: #262626">Dove siamo stati, cosa abbiamo realizzato e chi ha parlato di noi.</p>
+
+<div class="nw-list">
+<article class="nw" id="maker-faire">
+<img src="img/minotauro-occhi.webp" alt="Il Minotauro di STUDIO38D" loading="lazy" width="1200" height="900">
+<div>
+<div class="k">Ottobre 2026 · Evento</div>
+<h2>Il Minotauro alla Maker Faire Rome 2026</h2>
+<p>Abbiamo portato alla Maker Faire Rome il nostro Minotauro, la scultura di tre metri stampata in 3D, insieme a uno stand con le nostre collezioni di design. <span class="todo">[Da completare: nome del premio ricevuto e una frase su chi lo assegna]</span></p>
+<span class="badge"><img src="img/medaglia.svg" alt="">Premiati alla Maker Faire Rome 2026</span>
+<p style="font-size: 14px"><span class="todo">[Foto: mandami 1–2 foto dello stand o della premiazione]</span></p>
+</div>
+</article>
+
+<article class="nw" id="parco-schuster">
+<img src="img/minotauro-labirinto.webp" alt="Il Minotauro al centro del labirinto di Parco Schuster" loading="lazy" width="1200" height="900">
+<div>
+<div class="k">Settembre 2026 · Progetto</div>
+<h2>Un Minotauro di tre metri nel labirinto di Parco Schuster</h2>
+<p>363 pezzi, 2.867 ore di stampa e 147 kg: la scultura che abbiamo progettato e realizzato per il Roma Sud Summer Fest, al centro del labirinto di Parco Schuster.</p>
+<a href="minotauro.html" style="display: inline-block; margin-top: 16px; font-weight: 600; font-size: 16px">Scopri il progetto →</a>
+</div>
+</article>
+</div>
+
+<section id="stampa" style="margin-top: 88px">
+<h2 style="margin: 0 0 8px; font-family: Inter Tight, sans-serif; font-weight: 900; letter-spacing: -0.045em; font-size: clamp(40px, 5vw, 64px); line-height: 0.95">Dicono di noi</h2>
+<p style="margin: 0 0 28px; font-size: 17px; color: #5B6270">Articoli e pubblicazioni che parlano del nostro lavoro.</p>
+<div class="press">
+<a href="https://3druck.com/en/case-studies/drei-meter-hoher-minotaurus-aus-363-3d-gedruckten-bauteilen-gefertigt-58163913/" target="_blank" rel="noopener">
+<span class="s">3Druck.com · <span class="todo">[data]</span></span>
+<span class="t">A three-meter-tall Minotaur made from 363 3D-printed parts</span>
+<span style="font-weight: 600; font-size: 14px">Leggi l'articolo ↗</span>
+</a>
+<a href="#" target="_blank" rel="noopener">
+<span class="s"><span class="todo">[Testata · data]</span></span>
+<span class="t"><span class="todo">[Titolo dell'articolo sulla Maker Faire]</span></span>
+<span style="font-weight: 600; font-size: 14px">Leggi l'articolo ↗</span>
+</a>
+</div>
+</section>
+</main>
+<footer style="background: #1A1A1A; color: #D9D3C9">
+<div style="max-width: 1360px; margin: 0 auto; padding: 40px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 32px; font-size: 14px; font-family: Inter Tight, sans-serif; font-weight: 600">
+<span style="color: #F5F2ED; display: inline-flex; align-items: center; gap: 12px"><img src="img/logo-chiaro.svg" alt="STUDIO38D" width="32" height="32" style="width: 32px; height: 32px; display: block; border-radius: 0">Built, not rendered.</span>
+<span>Via Alberto Ascari 38D, Roma · info@studio38d.com · @studio38d</span>
+</div>
+<div style="max-width: 1360px; margin: 0 auto; padding: 0 24px 28px; font-size: 12px; color: #A29B90">STUDIO38D S.r.l. · Via Alberto Ascari 38D, 00142 Roma · C.F. e P.IVA 18445081005 · PEC studio38d@ultracert.it · <a href="privacy.html" style="color: #A29B90">Privacy</a></div>
+<div style="max-width: 1360px; margin: 0 auto; padding: 0 24px 28px"><a class="mf-badge" href="notizie.html#maker-faire" title="STUDIO38D alla Maker Faire Rome 2026"><img src="img/medaglia.svg" alt="" width="40" height="40">Premiati alla Maker Faire Rome 2026 →</a></div>
+</footer>
+</div>
+<script>
+(function(){var h=document.querySelector('.site-head'),b=h&&h.querySelector('.nav-toggle');if(!b)return;
+b.addEventListener('click',function(){var o=h.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');b.setAttribute('aria-label',o?'Chiudi il menu':'Apri il menu');});
+h.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){h.classList.remove('open');b.setAttribute('aria-expanded','false');});});})();
+</script>
+</body>
+</html>

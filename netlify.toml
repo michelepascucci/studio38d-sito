@@ -31,3 +31,9 @@
   [headers.values]
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# La lampada Civiltà ora si chiama C²: il vecchio indirizzo porta alla nuova pagina
+[[redirects]]
+  from = "/lampada-civilta.html"
+  to = "/lampada-c2.html"
+  status = 301
